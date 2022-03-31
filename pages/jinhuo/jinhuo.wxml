@@ -1,0 +1,67 @@
+<view class="jinhuo">
+  <picker mode="date" class="datefiltering" value="{{date}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      日期筛选： {{date}}
+    </view>
+  </picker>
+
+  <view class="jinhuoContent">
+      <view class="jinhuoItem">
+          <view class="jinhuoItemCon">
+              <view class="jinhuoItemC_info">
+                  <view class="text">货单编号：2022032400001</view>
+                  <view class="text">状态：配送中</view>
+                  <view class="text">进货日期：2022-03-24</view>
+                  <view class="text">金额：￥2952</view>
+              </view>
+              <view class="jinhuoItemPro">
+                <view class="jinhuoItemProItem">
+                  <view class="li">
+                      <view class="img">
+                          <image src="/images/pro1.jpg"></image>
+                      </view>
+                      <view class="tit">
+                          <view class="h3">朝日啤酒500ml</view>
+                      </view>
+                      <view class="num">x 12</view>
+                      <view class="price">单价￥123</view>
+                  </view>
+                  <view class="li">
+                      <view class="img">
+                          <image src="/images/pro1.jpg"></image>
+                      </view>
+                      <view class="tit">
+                          <view class="h3">朝日啤酒500ml</view>
+                      </view>
+                      <view class="num">x 12</view>
+                      <view class="price">单价￥123</view>
+                  </view>
+                </view>
+              </view>
+          </view>
+          <view class="jinhuoItemBtn">
+              <button>确认货单</button>
+          </view>
+      </view>
+  </view>
+  
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

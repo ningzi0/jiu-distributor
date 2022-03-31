@@ -1,0 +1,34 @@
+<view class="wallet">
+    <view class="walletTit">
+        <text class="tit">贵州佰群如生酒业有限公司</text>
+        <text class="tags">已实名</text>
+    </view>
+    <view class="walletCon">
+        <view class="text">经营资产(元)</view>
+        <view class="moneyNum">0.00</view>
+        <navigator>对帐</navigator>
+    </view>
+
+    <view class="tips">
+        <text>温馨提示：经营资产无需提现，两小时内实时到账相应商户的微信钱包中，具体明细可点击对帐查看，如有其他疑问请联系平台客服，客服电话：400-8888-888</text>
+    </view>
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

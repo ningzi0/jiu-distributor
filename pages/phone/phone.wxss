@@ -1,0 +1,40 @@
+/* pages/phone/phone.wxss */
+.phone{
+  margin: 30rpx;
+  background-color: #fff;
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+.phone .p_item {
+  margin: 50rpx 0;
+}
+.phone .p_item .span{
+  display: inline-block;
+  width: 170rpx;
+  color: #696969;
+}
+
+.p_item input{
+  border: 1px solid #eee;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15rpx 20rpx;
+  width: 200rpx;
+}
+.p_item button{
+  width: 180rpx;
+  padding: 21rpx 10rpx;
+  margin: 0 0 0 10rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.newphone input{
+  width: 388rpx;
+}
+
+
+
+

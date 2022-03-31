@@ -1,0 +1,81 @@
+<view class="L_input">
+    <view class="l_i_item">
+        <input type="text" placeholder="公司名称" placeholder-style="color:#999"/>
+    </view>
+    <view class="l_i_item">
+        <input type="text" placeholder="联系人" placeholder-style="color:#999"/>
+    </view>
+    <view class="l_i_item">
+        <input type="number" placeholder="联系电话" placeholder-style="color:#999"/>
+    </view>
+    <view class="l_i_item">
+        <input type="text"  bindtap='select' placeholder="选择地址" value="{{areaInfo}}" disabled="true" placeholder-style="color:#999"/>
+    </view>
+    <view class="l_i_item">
+        <input type="text" placeholder="请输入详细地址(街道及门牌号)" placeholder-style="color:#999"/>
+    </view>
+    <view class="l_i_item">
+        <button class="upload-img-btn" bindtap="chooseImg" type='primary'>上传营业执照</button>
+        <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+            <image class='weui-uploader__img ' src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg"></image>
+        </view>
+    </view>
+</view>
+
+
+<view class="read">
+      <checkbox></checkbox><text>我已阅读并同意</text>  <navigator hover-class="none" url="/pages/agreement/agreement">《用户协议》</navigator> 、<navigator hover-class="none" url="/pages/agreement/agreement">《隐私协议》</navigator> 、<navigator hover-class="none" url="/pages/agreement/agreement">《支付协议》</navigator> 
+  </view>
+
+
+<view class="mask" style="visibility:{{addressMenuIsShow ? 'visible':'hidden'}}">
+<view class="picker-view" animation="{{animationAddressMenu}}">
+    <!-- 确认取消按钮 -->
+    <view class='btn'>
+        <text catchtap="cityCancel">取消</text>
+        <text style="float: right" catchtap="citySure">确定</text>
+    </view>
+    <!-- 选择地址 -->
+    <picker-view class='cont' bindchange="cityChange" value="{{value}}" wx:key="">
+    <!-- 省 -->
+        <picker-view-column>
+            <view wx:for="{{provinces}}" class="picker-item" wx:key="{{index}}">{{item.name}}</view>
+        </picker-view-column>
+<!-- 市 -->
+        <picker-view-column>
+            <view wx:for="{{citys}}" class="picker-item" wx:key="index">{{item.name}}</view>
+        </picker-view-column>
+<!-- 区 -->
+        <picker-view-column>
+            <view wx:for="{{areas}}" class="picker-item" wx:key="index">{{item.name}}</view>
+        </picker-view-column>
+    </picker-view>
+</view>
+</view>
+
+
+
+
+<view class="submit">
+    <navigator hover-class="none" url="/pages/my/my" open-type="switchTab">
+        <button>提交审核</button>
+    </navigator>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

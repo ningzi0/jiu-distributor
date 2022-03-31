@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/my/my",
+    "pages/test/test",
+    "pages/jinhuo/jinhuo",
+    "pages/order/order",
+    "pages/License/License",
+    "pages/wallet/wallet",
+    "pages/hetong/hetong",
+    "pages/time/time",
+    "pages/analysis/analysis",
+    "pages/login/login",
+    "pages/loginInput/loginInput",
+    "pages/agreement/agreement",
+    "pages/phone/phone",
+    "pages/news/news",
+    "pages/newshow/newshow",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fbdc0c",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7e7e7e",
+    "selectedColor": "#000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/tabar1.png",
+      "selectedIconPath": "/images/tabar1_active.png"
+    },
+    {
+      "pagePath": "pages/menu/menu",
+      "text": "进货",
+      "iconPath": "/images/tabar2.png",
+      "selectedIconPath": "/images/tabar2_active.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "/images/tabar4.png",
+      "selectedIconPath": "/images/tabar4_active.png"
+    }]
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

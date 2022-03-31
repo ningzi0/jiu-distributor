@@ -1,0 +1,47 @@
+
+
+
+.jinhuoItem{
+  background: #fff;
+  margin: 20rpx;
+  padding: 30rpx;
+  font-size: 28rpx;
+  line-height: 1.75;
+  color: #666;
+}
+.jinhuoItemPro .li{
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  padding: 20rpx;
+  margin: 20rpx 0;
+}
+.jinhuoItemPro .li .img image{
+  width: 90rpx;
+  height: 90rpx;
+  border: 1px solid #eee;
+  display: block;
+}
+.jinhuoItemPro .li .tit{
+  padding: 0 20rpx;
+  width: 35%;
+}
+.jinhuoItemPro .li .num{
+  width: 20%;
+}
+.jinhuoItemPro .li .price{
+  color: rgb(255, 145, 0);
+}
+.jinhuoItemBtn{
+  text-align: right;
+}
+.jinhuoItemBtn button{
+  display: inline-block;
+  font-size: 30rpx;
+  font-weight: 400;
+  width: 250rpx;
+  background: #fbdc0c;
+}
+.jinhuoItemBtn button:active{
+  opacity: 0.7;
+}

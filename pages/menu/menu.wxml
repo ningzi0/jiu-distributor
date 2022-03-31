@@ -1,0 +1,174 @@
+<view class="fixed">
+    
+
+    <!-- 导航 -->
+ <view class='top_nav'>
+    <view class="nav-name {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+        <text>{{item.name}}</text>
+    </view>
+    </view>
+</view>
+
+
+<!-- menu content -->
+<view class="menuContent">
+
+    <view hidden='{{currentId!=1}}' style="height: 100%;">
+        <!-- 左侧导航 -->
+        <view class='tui-fixed-left'>
+            <scroll-view class='tui-city-scroll' scroll-x="true" scroll-y="true" style='height:99%;' scroll-with-animation="true" scroll-top="{{leftMenuTop}}">
+            <text class="menu-item {{index === currentActiveIndex ? 'menu-active' : ''}}" wx:for="{{navList}}" wx:key="unique" data-index="{{index}}" id='{{index}}' catchtap='changeMenu'>{{item.c_name}}</text>
+            </scroll-view>
+        </view>
+
+        <!-- 右侧滚动商品 -->
+        <view class='content'>
+            <scroll-view class='tui-city-scroll-y' scroll-y="true" style='height:99%;' scroll-with-animation="true" scroll-top="{{rightProTop}}" bindscroll="scroll">
+                <view class='pro-item' wx:for="{{navList}}" wx:key="unique">
+                    <view class='tui-list-head' id='NAV{{index}}'>{{item.c_name}}<text>必喝啤酒爆款，无限回购</text></view>
+                    <view class='tui-list-li'>
+                        <view class='goods-box' wx:for-item='items' wx:for="{{item.list}}" wx:key="unique" >
+                            <navigator hover-class="none" url="/pages/pro/pro">
+                                <image class='goodsImg' src='{{items.url}}' mode="aspectFill"></image>
+                                <view class="goodContent">
+                                    <view class="goodC_tit">朝日啤酒<text>人气</text></view>
+                                    <view class="tags">
+                                        <text>首杯价</text>
+                                    </view>
+                                    <view class="price">
+                                        <text class="now">￥14</text>
+                                        <text class="old">￥29</text>
+                                    </view>
+                                </view>
+                                <view hover-class="none" class="add_shopCart">+</view>
+                            </navigator>
+                            
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    
+    </view>
+
+<view hidden='{{currentId!=2}}' style="height: 100%;">
+
+</view>
+
+<view hidden='{{currentId!=3}}' style="height: 100%;">
+
+</view>
+
+</view>
+
+
+
+
+<!-- 购物车 -->
+<view class="buycar">
+    <view class="buycarContent">
+        <view class="buyCarLeft" bindtap="showDialogBtn">
+            <view class="img">
+                <image src="/images/buycaricon.png"></image>
+                <text>2</text>
+            </view>
+            <view class="text">
+                <view class="h3">预计到手 <text>￥31.36</text></view>
+                <view class="span">已享受更低优惠，共减免￥29.64</view>
+            </view>
+        </view>
+        <view class="buycarRight">
+            <navigator hover-class="none" url="/pages/payment/payment">去结算</navigator>
+        </view>
+    </view>
+</view>
+
+<!-- 购物车弹出框 -->
+<!-- 模态框 规则 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-tit">
+        <label>
+            <checkbox></checkbox>
+            <view class="Selected">已选购商品（2件）</view>
+        </label>
+        <view class="delcar">
+            <image src="/images/delcar.png"></image>
+            <text>清空购物车</text>
+        </view>
+  </view>
+  <view class="modal-content">
+      <view class="buycarItem">
+            <checkbox></checkbox>
+            <view class="buycarPro">
+                <view class="img">
+                    <image src="/images/pro1.jpg"></image>
+                    <text class="explain">仅限门店自提</text>
+                </view>
+                <view class="buycarCon">
+                    <view class="buycarTit">朝日啤酒</view>
+                    <view class="buycarText">
+                        <text class="small">￥</text>
+                        <text class="big">19</text>
+                        <text class="del">￥32</text>
+                    </view>
+                </view>
+            </view>
+            <view class='row item-center'>
+                <view class="buy-num-btn btn-minus" disabled="{{minusStatus}}" plain='ture' bindtap='minusNum'>-</view><input class='buy-num-txt' disabled type='number' value='{{courseCount}}'></input><view class="buy-num-btn btn-add" plain='ture' bindtap='addNum'>+</view>
+            </view>
+      </view>
+      <view class="buycarItem">
+            <checkbox></checkbox>
+            <view class="buycarPro">
+                <view class="img">
+                    <image src="/images/pro1.jpg"></image>
+                    <text class="explain">仅限门店自提</text>
+                </view>
+                <view class="buycarCon">
+                    <view class="buycarTit">朝日啤酒</view>
+                    <view class="buycarText">
+                        <text class="small">￥</text>
+                        <text class="big">19</text>
+                        <text class="del">￥32</text>
+                    </view>
+                </view>
+            </view>
+            <view class='row item-center'>
+                <view class="buy-num-btn btn-minus" disabled="{{minusStatus}}" plain='ture' bindtap='minusNum'>-</view><input class='buy-num-txt' disabled type='number' value='{{courseCount}}'></input><view class="buy-num-btn btn-add" plain='ture' bindtap='addNum'>+</view>
+            </view>
+      </view>
+
+  </view>
+  <!-- <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view> -->
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

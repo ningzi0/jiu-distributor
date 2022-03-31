@@ -1,0 +1,73 @@
+/* pages/License/License.wxss */
+.license{
+  background-color: #fff;
+  margin: 20rpx;
+  border-radius: 15rpx;
+  padding: 20rpx;
+}
+
+.license-tit text.tit{
+  font-size: 34rpx;
+}
+.license-tit text.tags{
+  color: #11a051;
+  font-size: 26rpx;
+  border: 1px solid #11a051;
+  padding: 2rpx 10rpx;
+  margin-left: 10rpx;
+  border-radius: 10rpx;
+}
+.license-tit text{
+  display: inline-block;
+  vertical-align: middle;
+}
+.license .file button.upload-img-btn{
+  width: 90%;
+  background: none;
+  border: 1px solid #d8dad9;
+  color: #d8dad9;
+  font-size: 80rpx;
+  font-weight: bold;
+  min-height: 360rpx;
+  line-height: 360rpx;
+  margin: 20rpx auto 0;
+}
+.license .file{
+  position: relative;
+}
+.license .file .pic{
+  position: absolute;
+  z-index: 22;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%,0);
+  height: 100%;
+}
+.license .file .pic image{
+  width: 100%;
+  height: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #d8dad9;
+}
+
+.licenseContent{
+  margin: 20rpx 0;
+}
+.licenseContent .item{
+  display: flex;
+  align-items: center;
+  padding: 25rpx 0;
+  border-bottom: 1px solid #ededed;
+  font-size: 29rpx;
+}
+.licenseContent .item text{
+  width: 220rpx;
+  color: #9c9c9c;
+}
+.licenseContent .item input{
+  width: 70%;
+}
+
+

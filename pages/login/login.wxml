@@ -1,0 +1,37 @@
+<view class="login">
+    <view class="loginContent">
+        <image src="/images/login.jpg"></image>
+        <view class="loginBtn">
+            <navigator url="/pages/loginInput/loginInput" >微信一键登录</navigator>
+        </view>
+    </view>
+
+
+    <view class="read">
+        <checkbox></checkbox><text>我已阅读并同意</text>  <navigator hover-class="none" url="/pages/agreement/agreement">《用户协议》</navigator> 、<navigator hover-class="none" url="/pages/agreement/agreement">《隐私协议》</navigator> 、<navigator hover-class="none" url="/pages/agreement/agreement">《支付协议》</navigator> 
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

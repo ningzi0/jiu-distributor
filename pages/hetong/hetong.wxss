@@ -1,0 +1,22 @@
+/* pages/hetong/hetong.wxss */
+.hetong .tit{
+  text-align: center;
+  background-color: #2a3845;
+  font-size: 36rpx;
+  color: #fff;
+  padding: 20rpx 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.hetongContent{
+  margin-top: 110rpx;
+}
+.hetongContent .img{
+  margin:20rpx 20rpx 10rpx;
+}
+.hetongContent .img image{
+  width: 100%;
+  height: 1140rpx;
+}

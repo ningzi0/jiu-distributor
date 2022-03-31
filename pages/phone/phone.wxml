@@ -1,0 +1,41 @@
+<view class="phone">
+    <view class="p_item">
+        <text class="span">区号</text>
+        <text class="font">+86</text>
+    </view>
+    <view class="p_item">
+        <text class="span">原手机号</text>
+        <text class="font">151****0538</text>
+    </view>
+    <view class="p_item">
+        <text class="span">验证码</text>
+        <input type="number" placeholder="验证码"/>
+        <button bindtap="Gain" disabled="{{disabledValue}}">{{countDownNum}}</button>
+    </view>
+    <view class="p_item newphone">
+        <text class="span">新手机号</text>
+        <input type="number" />
+    </view>
+</view>
+
+
+
+
+<view class="submit">
+    <button>确定</button>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

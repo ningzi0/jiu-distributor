@@ -1,0 +1,267 @@
+page{
+  height: 100vh;
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+
+
+/* menuContent */
+.menuContent{
+  height: 80vh;
+  position: relative;
+  top: 105rpx;
+}
+
+/* 左右侧导航 */
+.tui-fixed-x{top: 0rpx;left: 0;}
+.tui-fixed-left{width: 180rpx;height: 100%;border-right: 1px solid #f6f6f6;
+background-color:#f5f5f5;top: 0rpx;left: 0;}
+.tui-city-scroll{width: 100%;}
+.menu-item{display: block;position: relative;width: 180rpx;height: 90rpx;line-height: 90rpx;font-size: 26rpx;margin: 30rpx 0;
+box-sizing: border-box;z-index: 10;text-align: center;}
+.menu-active{border-left:10rpx solid #5196ff;background-color:#e5e5e5;font-weight: bold;border-radius: 0 100rpx 100rpx 0;}
+.content{padding:0 20rpx;position: absolute;top: 0;right: 0;width:570rpx;height: 99%;box-sizing: border-box;background: #fff;}
+.tui-city-scroll-y{height: 100%;box-sizing: border-box;}
+.tui-list-head{font-size: 28rpx;font-weight: 700;padding: 20rpx 0;}
+.tui-list-li{background:#fff;overflow: hidden;color: #fff;font-size: 50rpx;box-sizing: border-box;}
+.goods-box{float:left;overflow: hidden;position: relative;width: 100%;    margin: 0 10rpx 30rpx 0;}
+.tui-list-li .goods-box:nth-child(3n){margin-right:0rpx;}
+.goodsImg{margin-bottom: 15rpx;display: block;width:140rpx;height: 140rpx;border-radius: 50%;}
+.goodsName{margin-bottom: 20rpx;width:100%;height: 42rpx;line-height: 42rpx;overflow: hidden;box-sizing: border-box;
+text-align: center;font-size: 24rpx;text-overflow: ellipsis;white-space: nowrap;color: #333;}
+.tui-list-head text{
+  display: block;
+  font-size: 24rpx;
+  font-weight: 200;
+  margin: 15rpx 0;
+  color: #9f9f9f;
+}
+.goods-box navigator{
+  display: flex;
+  align-items:center;
+  color: #000;
+}
+.goodContent{
+  padding: 0 15rpx;
+}
+.goodC_tit{
+  font-size: 30rpx;
+}
+.goodC_tit text{
+  background: #ff532e;
+  color: #fff;
+  font-size: 22rpx;
+  padding: 3rpx 10rpx;
+  border-radius: 15rpx 0 15rpx 0;
+  margin-left: 10rpx;
+}
+.tags{
+  line-height: 1;
+}
+.tags text{
+  font-size: 24rpx;
+  border: 1px solid #d75c19;
+  color: #d75c19;
+  padding: 3rpx 5rpx;
+}
+.price{
+  font-size: 30rpx;
+  margin-top: 15rpx;
+}
+.price .now{
+  font-weight: bold;
+  color: #f85c33;
+}
+.price .old{
+  font-size: 24rpx;
+  color: #a6a8a7;
+  font-weight: bold;
+  margin-left: 10rpx;
+  text-decoration: line-through;
+}
+.goods-box .add_shopCart{
+  background: #fbdc0c;
+  color: #000;
+  display: block;
+}
+
+
+
+/* 购物车 */
+.buycar{
+  position: fixed;
+  bottom: 20rpx;
+  width: 95%;
+  background-color: #fff;
+  box-shadow: 0 0 20rpx rgba(0,0,0,0.1);
+  z-index: 10000;
+  left: 50%;
+  border-radius: 300rpx;
+  overflow: hidden;
+  transform: translate(-50%,0);
+}
+.buyCarLeft .img{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 4rpx;
+}
+.buyCarLeft{
+  width: 60%;
+  background-color: #fff;
+  padding: 15rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.text{
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.text .h3{
+  font-weight: bold;
+}
+.text text{
+  color: #ef5426;
+}
+.buyCarLeft .img image{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+}
+.buyCarLeft .span{
+  font-size: 20rpx;
+}
+.buyCarLeft .img text{
+  position: absolute;
+  top: -16rpx;
+  background-color: #c1a67b;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  border: 5rpx solid #fff;
+  right: 0;
+}
+.buycarRight{
+  width: 35%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fbdc0c;
+  color: #000;
+  text-align: center;
+  padding: 45.5rpx 0;
+  border-radius: 0 200rpx 200rpx 0;
+  float: right;
+}
+
+.modal-dialog{
+  width: 100%;
+  left: 0;
+  margin: 0;
+  top: auto;
+  bottom: 0;
+  transform: translate(0,0);
+  border-radius:20rpx 20rpx 0 0 ;
+  padding-bottom: 95rpx;
+}
+.modal-content{
+  max-height: 800rpx;
+  overflow-y: scroll;
+}
+
+
+/* 弹出层自定义样式 */
+.modal-tit{
+  padding: 30rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececea;
+}
+.modal-tit .Selected{
+  display: inline-block;
+}
+.delcar{
+  display: inline-block;
+  float: right;
+}
+.delcar image{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.delcar text{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #a4a4a4;
+}
+.buycarPro image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.buycarPro .img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.buycarPro .img .explain{
+  display:block;
+  font-size: 24rpx;
+  color: #051d97;
+  text-align: center;
+}
+.buycarPro{
+  display: inline-block;
+  vertical-align: middle;
+  width: 64%;
+}
+.buycarCon{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20rpx;
+  width: 50%;
+}
+.buycarTit{
+  font-size: 36rpx;
+}
+.buycarText{
+  margin: 15rpx 0;
+}
+.buycarText .small{
+  color: #ee5837;
+  font-weight: bold;
+}
+.buycarText .big{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #ee5837;
+}
+.buycarText .del{
+  text-decoration: line-through;
+  font-weight: bold;
+  color: #a1a5a8;
+}
+.buycarItem{
+  margin-bottom: 40rpx;
+}
+.buycarItem .item-center{
+  display: inline-block;
+  width: 200rpx;
+}
+.buycarItem .item-center .buy-num-txt{
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav-name{
+  padding: 20rpx 0;
+  font-size: 30rpx;
+}

@@ -1,0 +1,218 @@
+<view class="app">
+    <!-- top -->
+    <view class="top">
+        <view class="name">贵州午后凌风酒吧</view>
+        <view class="t_right">
+            <view class="t_r_item">
+                <image src="/images/kefu.png"></image>
+                <text>商家客服</text>
+            </view>
+            <view class="t_r_item">
+                <navigator hover-class="none" url="/pages/news/news">
+                    <view class="redpoint"></view>
+                    <image src="/images/xiaoxi.png"></image>
+                    <text>消息中心</text>
+                </navigator>
+            </view>
+        </view>
+    </view>
+    <!-- 销售量及商家货款 -->
+    <view class="sale b-radius b-shadow">
+        <view class="sale_item">
+          <navigator hover-class="none" url="/pages/analysis/analysis">
+              <view class="num">84</view>
+              <view class="span">今日销售量(件)</view> 
+              <image src="/images/arr_right.png"></image>
+          </navigator>
+        </view>
+        <view class="sale_item">
+          <navigator hover-class="none" url="/pages/analysis/analysis">
+              <view class="num">204.70</view>
+              <view class="span">今日商家货款(元)</view> 
+              <image src="/images/arr_right.png"></image>
+          </navigator>
+        </view>
+    </view>
+    <!-- 待办任务 -->
+    <view class="task b-radius m20 b-shadow">
+        <view class="taskTitle">
+            <view class="t_t_item t_t_tit">
+                <view class="text">
+                  待办任务
+                  <view class="redpoint">5</view>
+                </view>
+            </view>
+            <view class="t_t_item seeall">
+                <navigator hover-class="none">
+                    <text>查看全部</text>
+                    <image src="/images/arr_right.png"></image>
+                </navigator>
+            </view>
+        </view>
+
+        <view class="taskContent">
+            <view class="taskConItem">
+                <text class="tags">通知</text>
+                <view class="taskCon">
+                    <navigator hover-class="none">
+                        <view class="taskCon_tit">库存通知</view>
+                        <view class="p">您上架的商品【朝日啤酒】库存数不足，请尽快补充库存...</view>
+                    </navigator>
+                </view>
+            </view>
+            <view class="taskConItem">
+                <text class="tags">通知</text>
+                <view class="taskCon">
+                    <navigator hover-class="none">
+                        <view class="taskCon_tit">进货通知</view>
+                        <view class="p">您补充的【麒麟一番炸】进货单已到达午后凌风酒吧仓库...</view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 按钮 -->
+    <view class="index_btn m20 b-radius b-shadow">
+        <navigator hover-class="none">
+            <view class="img">
+                <image src="/images/kucun.png"></image>
+            </view>
+            <view class="text">本仓库存</view>
+        </navigator>
+        <navigator hover-class="none">
+            <view class="img">
+                <image src="/images/shouhou.png"></image>
+            </view>
+            <view class="text">售后管理</view>
+        </navigator>
+        <navigator hover-class="none">
+            <view class="img">
+                <image src="/images/zijinzhanghu.png"></image>
+            </view>
+            <view class="text">资金管理</view>
+        </navigator>
+    </view>
+
+    <!-- 订单管理---商品管理 -->
+    <view class="order-pro m20">
+        <view class='top_nav b-radius'>
+            <view class="nav-name {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+                <text class="nameTit">{{item.name}}</text>
+                <text class="tagsnum {{item.active}}">{{item.tagsNum}}</text>
+            </view>
+        </view>
+
+       
+
+        <view class="o_p_Content">
+            <view hidden='{{currentId!=1}}' style="height: 100%;">
+                <!-- tips -->
+                <view class="tips b-radius">订单管理是指顾客在小程序端下单并分配到就近分销商处取货的订单。</view>
+                <view class="in_order b-radius">
+                    <view class="inorder_item">
+                        <view class="date">2022-03-22</view>
+                        <view class="inorderPro">
+                            <view class="inorderProItem">
+                                <navigator hover-class="none">
+                                    <view class="inorderProTop">
+                                        <view class="in_o_tags">已下单</view>
+                                        <view class="img">
+                                            <image src="/images/pro1.jpg"></image>
+                                        </view>
+                                        <view class="inorderProTopInfo">
+                                            <view class="in_o_p_i_tit">午后凌风朝日啤酒500ml/瓶</view>
+                                            <view class="in_o_p_i_sku">SKUID:100016983657251</view>
+                                        </view>
+                                    </view>
+                                    <view class="inorderProBottom">
+                                        <view class="in_o_p_b_item">
+                                            <text>结算价(元)：</text>
+                                            <text>1000</text>
+                                        </view>
+                                        <view class="in_o_p_b_item">
+                                            <text>进货价(元)：</text>
+                                            <text>800</text>
+                                        </view>
+                                        <view class="in_o_p_b_item">
+                                            <text>利润分层(元)：</text>
+                                            <text>100</text>
+                                        </view>
+                                    </view>
+                                    <view class="Distribution">
+                                        <view class="dis_text">
+                                            <text>配送方式：</text>
+                                            <text>【外卖】</text>
+                                        </view>
+                                        <view class="add">张丰文 15185070538 贵州省贵阳市南明区首开紫郡紫香堤14栋2单元601</view>
+                                    </view>
+                                </navigator>
+                                <view class="in-o-btn">
+                                    <button class="cancel">取消订单</button>
+                                    <button class="DisBtn">配送</button>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+            <view hidden='{{currentId!=2}}' style="height: 100%;">
+                <view class="in-pro">
+                    <view class="inorderPro">
+                        <view class="inorderProItem">
+                            <navigator hover-class="none">
+                                <view class="inorderProTop">
+                                    <view class="in_o_tags">供货中</view>
+                                    <view class="img">
+                                        <image src="/images/pro1.jpg"></image>
+                                    </view>
+                                    <view class="inorderProTopInfo">
+                                        <view class="in_o_p_i_tit">午后凌风朝日啤酒500ml/瓶</view>
+                                        <view class="in_o_p_i_sku">SKUID:100016983657251</view>
+                                        <view class="in_o_p_i_sku">商品条码:6972056465586</view>
+                                        <view class="in_o_p_i_sku">库存剩余:600</view>
+                                    </view>
+                                </view>
+                            </navigator>
+                            <view class="in-o-btn">
+                                <button class="cancel">下架</button>
+                                <button class="DisBtn">详情</button>
+                                <button class="stock">进货</button>
+                            </view>
+                        </view>
+                        <view class="inorderProItem">
+                            <navigator hover-class="none">
+                                <view class="inorderProTop">
+                                    <view class="in_o_tags">供货中</view>
+                                    <view class="img">
+                                        <image src="/images/pro1.jpg"></image>
+                                    </view>
+                                    <view class="inorderProTopInfo">
+                                        <view class="in_o_p_i_tit">午后凌风朝日啤酒500ml/瓶</view>
+                                        <view class="in_o_p_i_sku">SKUID:100016983657251</view>
+                                        <view class="in_o_p_i_sku">商品条码:6972056465586</view>
+                                        <view class="in_o_p_i_sku">库存剩余:600</view>
+                                    </view>
+                                </view>
+                            </navigator>
+                            <view class="in-o-btn">
+                                <button class="cancel">下架</button>
+                                <button class="DisBtn">详情</button>
+                                <button class="stock">进货</button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+</view>
+
+<!-- 扫码核单 -->
+        <view class="saoma" bindtap="saoma">
+            <image src="/images/saoma.png"></image>
+            <view class="text">验证</view>
+        </view>

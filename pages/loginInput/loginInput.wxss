@@ -1,0 +1,113 @@
+/* pages/loginInput/loginInput.wxss */
+.L_input{
+  background-color: #fff;
+  margin: 20rpx;
+  border-radius: 15rpx;
+  padding: 30rpx;
+}
+.L_input .l_i_item{
+  position: relative;
+}
+.L_input .l_i_item input,.L_input .l_i_item button{
+  font-size: 32rpx;
+  padding: 20rpx;
+  border: 1px solid #eee;
+  margin: 20rpx 0;
+}
+.L_input .l_i_item input{
+  color: #000;
+}
+.L_input .l_i_item button{
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ffd006;
+  color: #000;
+}
+.l_i_item .pic{
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.l_i_item .pic image{
+  width: 110rpx;
+  height: 78rpx;
+  border-radius: 10rpx;
+  display: block;
+}
+
+.read{
+  display: flex;
+  font-size: 24rpx;
+  align-items: center;
+  padding: 20rpx;
+}
+.read text{
+  margin-right: 10rpx;
+}
+
+.read navigator{
+  color: #0029a7;
+}
+
+
+
+
+/* 三级联动 */
+.mask{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  z-index: 55;
+}
+.picker-view {
+  width: 100%;
+  display: flex;
+  z-index:12;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.btn {
+  width: 100%;
+  height: 90rpx;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  line-height: 90rpx;
+  text-align: center;
+  display: flex;
+  background: rgba(255,255,255,.8);
+  justify-content: space-between;
+}
+.cont {
+  width: 100%;
+  height: 389rpx;
+}
+.picker-item {
+  line-height: 70rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  text-align: center;
+}
+/* .address {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+} */
+
+
+
+

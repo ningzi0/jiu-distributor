@@ -1,0 +1,64 @@
+<view class="news">
+    <view class="item">
+      <navigator hover-class="none" url="/pages/newshow/newshow">
+        <view class="tags">通知</view>
+        <view class="newsContent">
+            <view class="h3">【重要】商家退取货流程更新</view>
+            <view class="p">尊敬的佰群如生酒业的商家朋友您好：为提升取货效率和取货体验，平台对全国各仓的取货流程进行了更新升级...</view>
+            <view class="date">前天17:01</view>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="item">
+      <navigator hover-class="none" url="/pages/newshow/newshow">
+        <view class="tags">通知</view>
+        <view class="newsContent">
+            <view class="h3">【重要】商家退取货流程更新</view>
+            <view class="p">尊敬的佰群如生酒业的商家朋友您好：为提升取货效率和取货体验，平台对全国各仓的取货流程进行了更新升级...</view>
+            <view class="date">前天17:01</view>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="item">
+      <navigator hover-class="none" url="/pages/newshow/newshow">
+        <view class="tags">通知</view>
+        <view class="newsContent">
+            <view class="h3">商家退取货流程更新</view>
+            <view class="p">尊敬的佰群如生酒业的商家朋友您好：为提升取货效率和取货体验，平台对全国各仓的取货流程进行了更新升级...</view>
+            <view class="date">前天17:01</view>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="item">
+      <navigator hover-class="none" url="/pages/newshow/newshow">
+        <view class="tags">通知</view>
+        <view class="newsContent">
+            <view class="h3">商家退取货流程更新</view>
+            <view class="p">尊敬的佰群如生酒业的商家朋友您好：为提升取货效率和取货体验，平台对全国各仓的取货流程进行了更新升级...</view>
+            <view class="date">前天17:01</view>
+        </view>
+      </navigator>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

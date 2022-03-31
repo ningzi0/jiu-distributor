@@ -1,0 +1,61 @@
+<!-- 导航 -->
+<!-- <view class='top_nav'>
+  <view class="nav-name {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+    <text>{{item.name}}</text>
+  </view>
+</view> -->
+
+
+<view class="analysisContent">
+  <view class="date">
+      <text class="dateItem"> ← 昨天</text>
+      <text class="dateItem"> ● 今天</text>
+      <!-- <picker mode="date" class="dateItem" value="{{date}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}} <image src="/images/dateicon.png"></image>
+        </view>
+      </picker> -->
+      <text class="dateItem">最近7天 →</text>
+      <text class="dateItem" bindtap="pickerShow">{{startTime}} {{endTime}}</text>
+  </view>
+
+
+ 
+  <view class="jiaoyi">
+      <view class="title">
+          <view class="h3">商品交易</view>
+          <view class="span">数据更新时间：{{time}}</view>
+      </view>
+      <view class="jiaoyiContent">
+        <view class="nav-name jiaoyiItem {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+            <view class="h3">{{item.name}}</view>
+            <view class="num">{{item.num}}</view>
+            <view class="span">较昨日 <text>--</text></view>
+        </view>
+      </view>
+      
+        <view class="jiaoyi_Chart">
+          <view hidden='{{currentId!=1}}'>
+            <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" ></ec-canvas>
+            
+          </view>
+          <view hidden='{{currentId!=2}}'>商家货款折线图
+            
+          </view>
+        </view>
+  </view>
+
+</view>
+
+
+
+<time-picker pickerShow="{{isPickerShow}}" id="picker" wx:if="{{isPickerRender}}" bind:hidePicker="pickerHide" bind:setPickerTime="setPickerTime"
+  config="{{pickerConfig}}"></time-picker>
+
+  <view style="text-align:center;margin-top:20px">
+    
+</view>
+
+
+
+

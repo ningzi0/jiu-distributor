@@ -1,0 +1,43 @@
+<view class="hetong">
+    <view class="tit">
+        <text>合同预览</text>
+    </view>
+
+    <view class="hetongContent">
+        <view class="img">
+            <image src="/images/hetongimg.png" mode="aspectFit"></image>
+        </view>
+        <view class="img">
+            <image src="/images/hetongimg.png" mode="aspectFit"></image>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

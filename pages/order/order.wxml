@@ -1,0 +1,58 @@
+<view class="order">
+  <picker mode="date" class="datefiltering" value="{{date}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      日期筛选： {{date}}
+    </view>
+  </picker>
+
+
+
+  <view class="in_order b-radius">
+      <view class="inorder_item">
+          <view class="date">2022-03-22</view>
+          <view class="inorderPro">
+              <view class="inorderProItem">
+                  <navigator hover-class="none">
+                      <view class="inorderProTop">
+                          <view class="in_o_tags">已下单</view>
+                          <view class="img">
+                              <image src="/images/pro1.jpg"></image>
+                          </view>
+                          <view class="inorderProTopInfo">
+                              <view class="in_o_p_i_tit">午后凌风朝日啤酒500ml/瓶</view>
+                              <view class="in_o_p_i_sku">SKUID:100016983657251</view>
+                          </view>
+                      </view>
+                      <view class="inorderProBottom">
+                          <view class="in_o_p_b_item">
+                              <text>结算价(元)：</text>
+                              <text>1000</text>
+                          </view>
+                          <view class="in_o_p_b_item">
+                              <text>进货价(元)：</text>
+                              <text>800</text>
+                          </view>
+                          <view class="in_o_p_b_item">
+                              <text>利润分层(元)：</text>
+                              <text>100</text>
+                          </view>
+                      </view>
+                      <view class="Distribution">
+                          <view class="dis_text">
+                              <text>配送方式：</text>
+                              <text>【外卖】</text>
+                          </view>
+                          <view class="add">张丰文 15185070538 贵州省贵阳市南明区首开紫郡紫香堤14栋2单元601</view>
+                      </view>
+                  </navigator>
+                  <view class="in-o-btn">
+                      <button class="cancel">取消订单</button>
+                      <button class="DisBtn">配送</button>
+                  </view>
+              </view>
+          </view>
+      </view>
+  </view>
+</view>
+
+

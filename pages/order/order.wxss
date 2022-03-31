@@ -1,0 +1,4 @@
+/* pages/order/order.wxss */
+.in_order{
+  margin: 20rpx;
+}
