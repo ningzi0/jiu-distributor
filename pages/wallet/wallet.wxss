@@ -48,3 +48,34 @@
   line-height: 1.75;
   color: #666;
 }
+
+
+
+/* 提现、添加银行卡 */
+.Withdrawal{
+  display: flex;
+  margin: 20rpx 0;
+}
+.Withdrawal .btnItem {
+  flex: 1;
+}
+.Withdrawal .btnItem image{ 
+  width: 70rpx;
+  height: 70rpx;
+  display: block;
+  margin: 0 auto;
+}
+.Withdrawal .btnItem text{
+  text-align: center;
+  display: block;
+  font-size: 30rpx;
+}
+
+
+
+
+
+
+
+
+

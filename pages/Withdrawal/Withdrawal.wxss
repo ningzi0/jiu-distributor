@@ -1,0 +1,137 @@
+/* pages/Withdrawal/Withdrawal.wxss */
+.withdrawal_top{
+  background-color: #fff;
+  margin: 15rpx;
+  border-radius: 15rpx;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.withdrawal_top .w_t_span{
+  font-weight: bold;
+}
+.withdrawal_top .w_t_font{
+  width: 51%;
+  overflow: hidden;
+  height: 45rpx;
+  margin: 0 0 0 30rpx;
+  font-weight: 300;
+}
+.withdrawal_top .w_t_font image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.tags {
+  background-color: #fff;
+  padding: 0 18rpx;
+  margin-left: -30rpx;
+}
+.tags text{
+  font-size: 28rpx;
+  background-color: #fbdc0c;
+  padding: 7rpx 15rpx;
+  border-radius: 5rpx;
+}
+
+.arr_right image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+
+.Withdrawal_Amount{
+  background: #fff;
+  margin: 15rpx;
+  border-radius: 15rpx;
+  padding: 20rpx;
+}
+.Withdrawal_Amount .title{
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+}
+.Withdrawal_Amount .title text{
+  flex: 1;
+}
+.Withdrawal_Amount .title text.span{
+  font-weight: bold;
+}
+.Withdrawal_Amount .title text.font{
+  text-align: right;
+  font-size: 29rpx;
+}
+.input input{
+  font-size: 40rpx;
+  padding: 50rpx 20rpx;
+  border-bottom: 1px solid #e8e8e8;
+}
+.input .p{
+  font-size: 28rpx;
+  padding: 15rpx 0;
+  color: #ccc;
+}
+.input .p .all{
+  color: #57598a;
+  margin-left: 20rpx;
+}
+
+.tx_button button{
+  width: 96%;
+  margin: 15rpx;
+  background: #fbdc0c;
+  padding: 25rpx 0;
+  border-radius: 20rpx;
+}
+.tx_button textarea{
+  text-align: center;
+  width: 96%;
+  margin: 0 auto;
+  font-size: 29rpx;
+}
+
+.modal-content{
+  max-height: 750rpx;
+  overflow-y: auto;
+}
+.modal-title{
+  font-weight: bold;
+}
+.modal-item{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 30rpx 0;
+}
+.modal-item  image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 15rpx;
+}
+.modal-itemCon .default{
+  border: 1px solid #f1a14a;
+  color: #f1a14a;
+  display: inline-block;
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
+  margin: 10rpx 0;
+}
+.set_default{
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
+  margin: 10rpx 0;
+  color: #ccc;
+}
+
+
+
+
+
+
+

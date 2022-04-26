@@ -1,0 +1,50 @@
+<!--pages/AfterSale/AfterSale.wxml-->
+<view class="afterScale">
+    <view class="search">
+      <view class="searchInput">
+        <input type="number" placeholder="请输入订单号搜索"/>
+      </view>
+        
+        <view class="table_th">
+            <view class="text">客户账号</view>
+            <view class="text">申请日期</view>
+            <view class="text">退款金额</view>
+            <view class="text">操作</view>
+        </view>
+    </view>
+
+    <view class="afterScaleContent">
+        <view class="table_th">
+            <view class="text">午后凌风</view>
+            <view class="text">2022-04-18</view>
+            <view class="text">123.00</view>
+            <view class="examine text">
+                <navigator url="/pages/AfterSaleShow/AfterSaleShow">查看</navigator>
+            </view>
+        </view>
+        <view class="table_th">
+            <view class="text">午后凌风</view>
+            <view class="text">2022-04-18</view>
+            <view class="text">123.00</view>
+            <view class="examine text">
+                <navigator url="/pages/AfterSaleShow/AfterSaleShow">查看</navigator>
+            </view>
+        </view>
+    </view>
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+

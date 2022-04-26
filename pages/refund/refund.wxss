@@ -1,0 +1,103 @@
+/* pages/refund/refund.wxss */
+.refund{
+  margin-bottom: 120rpx;
+}
+.refund .ul{
+  background-color: #fff;
+  padding:0 30rpx;
+  margin-bottom: 20rpx;
+}
+.refund .ul .li {
+  border-bottom: 1px solid #eee;
+  padding: 30rpx 0;
+  align-items: center;
+}
+
+.refund .ul .li:last-child{
+  border: 0;
+}
+.refund .ul .li .tit{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.refund .ul .li textarea{
+  padding: 15rpx 0;
+}
+.refundCon{
+  display: inline-block;
+  vertical-align: middle;
+}
+.money{
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.money input{
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+}
+.money text{
+  display: inline-block;
+  vertical-align: middle;
+}
+.file{
+  margin-bottom: 20rpx;
+}
+.fileBtn{
+  background-color: #fff;
+  text-align: center;
+  padding: 20rpx;
+  margin: 0 20rpx;
+}
+.file-btn .pic{
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #eee;
+  margin: 10rpx;
+  padding: 10rpx;
+  position: relative;
+}
+.file-btn .pic image{
+  width: 145rpx;
+  height: 145rpx;
+}
+.file-btn .pic .closeImg{
+  width: 50rpx;
+  height: 50rpx;
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5rpx;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: -20rpx;
+}
+.file-btn .pic .closeImg image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
+
+.preservation{
+  position: fixed;
+  bottom: 10rpx;
+  width: 95%;
+  background-color: #fdc202;
+  left: 50%;
+  transform: translate(-50%,0);
+  text-align: center;
+  padding: 20rpx 0;
+  border-radius: 100rpx;
+}
+
+
+
+
+
+

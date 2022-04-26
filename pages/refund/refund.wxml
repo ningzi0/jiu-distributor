@@ -1,0 +1,68 @@
+<view class="refund">
+    <view class="ul">
+        <view class="li">
+            <text class="tit">申请类型</text>
+            <picker class="refundCon" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">
+                {{array[index]}}
+              </view>
+            </picker>
+        </view>
+        <view class="li">
+            <text class="tit">申请原因</text>
+            <picker class="refundCon" bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+              <view class="picker">
+                {{array1[index1]}}
+              </view>
+            </picker>
+        </view>
+        <view class="li">
+            <text class="tit">申请金额</text>
+            <view class="money refundCon">
+              <text>￥</text><input type="number" placeholder="" value="156.8"/>
+            </view>
+        </view>
+    </view>
+
+    <view class="ul">
+        <view class="li">
+            <text class="tit">申请说明</text>
+            <textarea class="refundCon" name="" id="" placeholder="请您详细填写申请说明" placeholder-style="color:#eee"></textarea>
+        </view>
+    </view>
+    <view class="file">
+        <view class="file-btn">
+          <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+              <image class='weui-uploader__img ' src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg"></image>
+              <view class="closeImg" bindtap="deleteImg">
+                  <image src="/images/close.png"></image>
+              </view>
+          </view>
+          <view class="upload-img-btn fileBtn" bindtap="chooseImg" >
+              <text>上传图片 + </text>
+          </view>
+          
+        </view>
+    </view>
+
+    <view class="ul">
+        <view class="li">
+            <text class="tit">联系电话</text>
+            <view class="money refundCon">
+              <input type="number" placeholder="" disabled="disabled" value="18798829360"/>
+            </view>
+        </view>
+    </view>
+
+</view>
+
+
+
+
+<view class="preservation">
+    <navigator hover-class="none">提交申请</navigator>
+</view>
+
+
+
+

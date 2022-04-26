@@ -1,0 +1,48 @@
+/* pages/addbankcard/addbankcard.wxss */
+page{
+  background: #fff;
+}
+.a_b_c_item{
+  display: flex;
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  margin: 0 30rpx;
+  border-bottom: 1px solid #e8e8e8;
+  align-items: center;
+}
+.a_b_c_item .a_b_c_item_name{
+  font-weight: bold;
+  font-size: 34rpx;
+}
+.a_b_c_item .a_b_c_item_name,.a_b_c_item .input{
+  flex: 1;
+}
+.a_b_c_item .input{
+  text-align: right;
+}
+.a_b_c_item .input picker{
+  color: #9b9b9b;
+}
+
+.addBtnWrap .addBtn,.addBtnWrap .closebtn{
+  background: #f9fafc;
+  margin: 15rpx 30rpx;
+  text-align: center;
+  padding: 30rpx 0;
+  border-radius: 15rpx;
+  font-weight: bold;
+}
+.addBtnWrap .addBtn{
+  background: #ffc102;
+}
+
+
+
+
+
+
+
+
+
+
+

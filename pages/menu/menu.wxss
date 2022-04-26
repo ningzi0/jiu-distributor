@@ -119,7 +119,7 @@ text-align: center;font-size: 24rpx;text-overflow: ellipsis;white-space: nowrap;
   vertical-align: middle;
 }
 .text{
-  width: 70%;
+  width: 74%;
   display: inline-block;
   vertical-align: middle;
 }

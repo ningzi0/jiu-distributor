@@ -1,0 +1,71 @@
+<view class="addbankcard">
+    <view class="a_b_c_item">
+        <view class="a_b_c_item_name">银行开户名</view>
+        <view class="input">
+            <input type="text" placeholder="请输入银行开户名" placeholder-style="color:#9b9b9b"/>
+        </view>
+    </view>
+    <view class="a_b_c_item">
+        <view class="a_b_c_item_name">银行账户类型</view>
+        <view class="input">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">
+                {{array[index]}}
+              </view>
+          </picker>
+        </view>
+    </view>
+    <view class="a_b_c_item">
+        <view class="a_b_c_item_name">银行卡号</view>
+        <view class="input">
+            <input type="number" placeholder="请输入银行卡号" placeholder-style="color:#9b9b9b"/>
+        </view>
+    </view>
+    <view class="a_b_c_item">
+        <view class="a_b_c_item_name">开户银行</view>
+        <view class="input">
+            <input type="text" placeholder="请输入开户银行" placeholder-style="color:#9b9b9b"/>
+        </view>
+    </view>
+    <view class="a_b_c_item">
+        <view class="a_b_c_item_name">开户银行所在地</view>
+        <view class="input">
+            <input type="text" placeholder="请输入开户银行所在地" placeholder-style="color:#9b9b9b"/>
+        </view>
+    </view>
+    <view class="a_b_c_item">
+        <view class="a_b_c_item_name">开户银行支行</view>
+        <view class="input">
+            <input type="text" placeholder="请输入开户银行支行" placeholder-style="color:#9b9b9b"/>
+        </view>
+    </view>
+
+    <view class="addBtnWrap">
+        <view class="addBtn">保存编辑</view>
+        <view class="closebtn">取消返回</view>
+    </view>
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

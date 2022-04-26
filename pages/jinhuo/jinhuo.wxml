@@ -40,6 +40,7 @@
               </view>
           </view>
           <view class="jinhuoItemBtn">
+              <navigator url="/pages/refund/refund">申请退款</navigator>
               <button>确认货单</button>
           </view>
       </view>

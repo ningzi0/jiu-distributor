@@ -17,6 +17,13 @@
     "pages/phone/phone",
     "pages/news/news",
     "pages/newshow/newshow",
+    "pages/InventoryDetails/InventoryDetails",
+    "pages/AfterSale/AfterSale",
+    "pages/AfterSaleShow/AfterSaleShow",
+    "pages/Withdrawal/Withdrawal",
+    "pages/bankcard/bankcard",
+    "pages/addbankcard/addbankcard",
+    "pages/refund/refund",
     "pages/logs/logs"
   ],
   "window":{

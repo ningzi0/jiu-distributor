@@ -1,0 +1,63 @@
+/* pages/AfterSale/AfterSale.wxss */
+.afterScale .search{
+  padding: 20rpx 20rpx 0;
+  background-color: #fff;
+  border-radius:10rpx ;
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  width: 100%;
+}
+.afterScale .search input{
+  box-sizing: border-box;
+  font-size: 28rpx;
+  line-height: 2;
+}
+.afterScale .search .searchInput{
+  border: 1px solid #eee;
+  border-radius: 200rpx;
+  padding: 10rpx 30rpx;
+  background-color: #fafafa;
+}
+.afterScale .search .table_th{
+  margin-top: 20rpx;
+}
+
+.afterScaleContent{
+  font-size: 28rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 198rpx 0 0;
+}
+
+.table_th{
+  display: flex;
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  align-items: center;
+}
+.table_th .text{
+  flex: 1;
+  text-align: center;
+}
+.afterScaleContent .table_th{
+  border-bottom: 1px solid #eee;
+}
+.afterScaleContent .table_th:last-child{
+  border: 0;
+}
+.afterScaleContent .table_th .examine navigator{
+  background-color: #fbdc0c;
+  padding: 10rpx 0;
+  margin: 0 8rpx;
+  border-radius: 5rpx;
+}
+
+
+
+
+
+
+
+
+

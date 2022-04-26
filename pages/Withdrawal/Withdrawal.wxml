@@ -1,0 +1,99 @@
+<view class="withdrawal">
+    <view class="withdrawal_top"  bindtap="showDialogBtn">
+        <view class="w_t_span w_t_item">到账银行卡</view>
+        <view class="w_t_font w_t_item"> <image src="/images/abc.png" ></image> 安顺农村商银行股份有限公司南马支行</view>
+        <view class="w_t_item tags">
+            <text>默认</text>
+        </view>
+        <view class="w_t_item arr_right">
+            <image src="/images/arr_right.png"></image>
+        </view>
+    </view>
+
+    <view class="Withdrawal_Amount">
+        <view class="title">
+            <text class="span">提现金额（元）</text>
+            <text class="font">免服务费</text>
+        </view>
+        <view class="input">
+            <input type="number" placeholder="请输入提现金额" placeholder-style="color:#ccc"/>
+            <view class="p">
+                <text class="span">可提现余额0.00元</text>
+                <text class="all">全部提现</text>
+            </view>
+        </view>
+    </view>
+    
+    
+    <view class="tx_button">
+        <button>预计2小时到账，确认提现</button>
+        <textarea name="" placeholder="添加备注（16字以内可选填）" placeholder-style="color:#ccc"></textarea>
+    </view>
+
+</view>
+
+
+
+<!-- 模态框 选择银行卡 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">选择银行卡</view>
+  <view class="modal-content">
+      <view class="modal-item">
+            <image src="/images/abc.png"></image>
+            <view class="modal-itemCon">
+                <view class="h3">安顺农村商业银行股份有限公司(6589)</view>
+                <view class="default">默认提现卡</view>
+            </view>
+      </view>
+      <view class="modal-item">
+            <image src="/images/icbc.png"></image>
+            <view class="modal-itemCon">
+                <view class="h3">安顺工商银行股份有限公司(6589)</view>
+            </view>
+      </view>
+      <view class="modal-item">
+            <image src="/images/yinhangka.png"></image>
+            <view class="modal-itemCon">
+                <navigator>
+                    <view class="h3">添加银行卡或管理银行卡</view>
+                </navigator>
+            </view>
+      </view>
+  </view>
+  <!-- <view class="modal-footer">
+     <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view> 
+     <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view> 
+  </view> -->
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

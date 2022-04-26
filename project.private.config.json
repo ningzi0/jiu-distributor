@@ -130,6 +130,55 @@
           "name": "消息详情",
           "pathName": "pages/newshow/newshow",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "库存明细",
+          "pathName": "pages/InventoryDetails/InventoryDetails",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "售后服务",
+          "pathName": "pages/AfterSale/AfterSale",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "退款单详情",
+          "pathName": "pages/AfterSaleShow/AfterSaleShow",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "提现",
+          "pathName": "pages/Withdrawal/Withdrawal",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "银行卡",
+          "pathName": "pages/bankcard/bankcard",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "添加银行卡",
+          "pathName": "pages/addbankcard/addbankcard",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "退款",
+          "pathName": "pages/refund/refund",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

@@ -1,0 +1,47 @@
+/* pages/bankcard/bankcard.wxss */
+.bankcardItem navigator{
+  background: #fff;
+  margin: 15rpx;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 15rpx;
+}
+.bankcardItem image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.bankcardI_con{
+  margin-left: 20rpx;
+}
+.bankcardTitle{
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.bankcardspan{
+  font-size: 29rpx;
+  color: #969696;
+  margin: 10rpx 0;
+}
+.bankcardNumber{
+  font-weight: bold;
+  font-size: 34rpx;
+}
+
+.bankcardButton navigator{
+  background: #fff;
+  font-weight: bold;
+  font-size: 36rpx;
+  text-align: center;
+  margin: 15rpx;
+  padding: 20rpx 0;
+  border-radius: 15rpx;
+}
+
+
+
+
+
+
+
+

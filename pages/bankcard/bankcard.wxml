@@ -1,0 +1,37 @@
+<view class="bankcard">
+    <view class="bankcardItem">
+        <navigator url="/pages/addbankcard/addbankcard">
+            <image src="/images/money_ico.png"></image>
+            <view class="bankcardI_con">
+                <view class="bankcardTitle">安顺农村商业银行股份有限公司</view>
+                <view class="bankcardspan">(默认提现卡)</view>
+                <view class="bankcardNumber"> * * * * * * * * * * * * * * * * 6 5 8 9</view>
+            </view>
+        </navigator>
+    </view>
+</view>
+
+<view class="bankcardButton">
+    <navigator url="/pages/addbankcard/addbankcard">+ 添加银行卡</navigator>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

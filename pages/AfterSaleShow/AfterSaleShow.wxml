@@ -1,0 +1,83 @@
+<!--pages/AfterSaleShow/AfterSaleShow.wxml-->
+  <view class="aftersaleshow">
+      <view class="title">退款单信息</view>
+      <view class="aftersaleShowContent">
+          <view class="item">
+              <view class="span">退款单编号：</view>
+              <view class="font colorred">12070364816</view>
+          </view>
+          <view class="item">
+              <view class="span">申请日期：</view>
+              <view class="font">2022-04-18 12:30:40</view>
+          </view>
+          <view class="item">
+              <view class="span">审核状态：</view>
+              <view class="font">待审核</view>
+          </view>
+          <view class="item">
+              <view class="span">退款金额：</view>
+              <view class="font colorred">￥1386</view>
+          </view>
+          <view class="item">
+              <view class="span">申请理由：</view>
+              <view class="font">不想要了</view>
+          </view>
+      </view>
+      <view class="title">订单信息</view>
+      <view class="aftersaleShowContent">
+          <view class="item">
+              <view class="span">订单编号：</view>
+              <view class="font colorblue">12070364816</view>
+          </view>
+          <view class="item">
+              <view class="span">客户账号：</view>
+              <view class="font">午后凌风华雪月</view>
+          </view>
+          <view class="item">
+              <view class="span">订单状态：</view>
+              <view class="font">取消</view>
+          </view>
+          <view class="item">
+              <view class="span">出库信息：</view>
+              <view class="font colorblue">待出库</view>
+          </view>
+      </view>
+
+
+
+
+      <view class="btn">
+          <button class="adopt">通过</button>
+          <button class="reject" bindtap="showDialogBtn">驳回</button>
+      </view>
+  </view>
+
+
+
+
+<!-- 模态框 规则 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">驳回原因</view>
+  <view class="modal-content">
+    <textarea name="" id="" placeholder="请输入驳回原因"></textarea>
+  </view>
+  <view class="modal-footer">
+    <!-- <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view> -->
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

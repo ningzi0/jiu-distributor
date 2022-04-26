@@ -6,8 +6,20 @@
     <view class="walletCon">
         <view class="text">经营资产(元)</view>
         <view class="moneyNum">0.00</view>
-        <navigator>对帐</navigator>
+        <!-- <navigator>对帐</navigator> -->
     </view>
+
+    <view class="Withdrawal">
+        <navigator class="btnItem" hover-class="none" url="/pages/Withdrawal/Withdrawal">
+            <image src="/images/tixian.png" mode="aspectFill"></image>
+            <text>提现</text>
+        </navigator>
+        <navigator class="btnItem" hover-class="none" url="/pages/bankcard/bankcard">
+            <image src="/images/yinhangka.png" mode="aspectFill"></image>
+            <text>银行卡</text>
+        </navigator>
+    </view>
+
 
     <view class="tips">
         <text>温馨提示：经营资产无需提现，两小时内实时到账相应商户的微信钱包中，具体明细可点击对帐查看，如有其他疑问请联系平台客服，客服电话：400-8888-888</text>
