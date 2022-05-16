@@ -24,6 +24,7 @@
     "pages/bankcard/bankcard",
     "pages/addbankcard/addbankcard",
     "pages/refund/refund",
+    "pages/businessPic/businessPic",
     "pages/logs/logs"
   ],
   "window":{

@@ -1,6 +1,6 @@
 <view class="my">
     <view class="my_header">
-        <view class="my_name">午后凌风酒吧</view>
+        <view class="my_name">午后凌风酒吧 <navigator>商家图片</navigator></view>
         <view class="my_name_info">
             <text class="my_p">贵州午后凌风主题酒吧 | 1211897</text>
             <text class="my_tags">正常合作</text>

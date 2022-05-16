@@ -1,0 +1,31 @@
+<view class="pic">
+  <view class="picWrap">
+      <image src="/images/license.jpg" mode="aspectFill"></image>
+      <view class="close"  hidden="{{hiddenName}}">×</view>
+    </view>
+  <view class="picWrap">
+      <image src="/images/license.jpg" mode="aspectFill"></image>
+      <view class="close"  hidden="{{hiddenName}}">×</view>
+    </view>
+  <view class="picWrap">
+      <image src="/images/license.jpg" mode="aspectFill"></image>
+      <view class="close" hidden="{{hiddenName}}">×</view>
+    </view>
+  <view class="picWrap">
+      <image src="/images/license.jpg" mode="aspectFill"></image>
+      <view class="close" hidden="{{hiddenName}}">×</view>
+    </view>
+  <view class="picWrap">
+      <image src="/images/license.jpg" mode="aspectFill"></image>
+      <view class="close" hidden="{{hiddenName}}">×</view>
+    </view>
+  <view class="picWrap">
+      <image src="/images/license.jpg" mode="aspectFill"></image>
+      <view class="close" hidden="{{hiddenName}}">×</view>
+    </view>
+</view>
+
+<view class="btn">
+  <view class="button"  bindtap="shghnn">管理</view>
+  <view class="button">上传</view>
+</view>

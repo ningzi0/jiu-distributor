@@ -87,3 +87,9 @@
 }
 
 
+/* 商家图片 */
+.my_name navigator{
+  font-size: 24rpx;
+  display: inline-block;
+  font-weight: 500;
+}

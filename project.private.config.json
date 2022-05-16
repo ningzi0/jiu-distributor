@@ -179,6 +179,13 @@
           "name": "退款",
           "pathName": "pages/refund/refund",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "商家图片",
+          "pathName": "pages/businessPic/businessPic",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }
