@@ -7,9 +7,33 @@
     </view>
 
 
+    <view></view>
+
+    
+
     <view class="read">
         <checkbox></checkbox><text>我已阅读并同意</text>  <navigator hover-class="none" url="/pages/agreement/agreement">《用户协议》</navigator> 、<navigator hover-class="none" url="/pages/agreement/agreement">《隐私协议》</navigator> 、<navigator hover-class="none" url="/pages/agreement/agreement">《支付协议》</navigator> 
     </view>
+</view>
+
+
+
+
+
+
+
+
+<!-- 模态框 规则 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">授权</view>
+  <view class="modal-content">
+      <view class="p">授权获取用户手机号187****9360</view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
 </view>
 
 

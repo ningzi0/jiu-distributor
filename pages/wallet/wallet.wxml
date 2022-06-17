@@ -6,7 +6,7 @@
     <view class="walletCon">
         <view class="text">经营资产(元)</view>
         <view class="moneyNum">0.00</view>
-        <!-- <navigator>对帐</navigator> -->
+        <navigator url="/pages/details/details">对帐</navigator>
     </view>
 
     <view class="Withdrawal">

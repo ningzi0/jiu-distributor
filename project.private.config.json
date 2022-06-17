@@ -186,6 +186,20 @@
           "name": "商家图片",
           "pathName": "pages/businessPic/businessPic",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "提现明细",
+          "pathName": "pages/details/details",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "订单详情",
+          "pathName": "pages/orderShow/orderShow",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

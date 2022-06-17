@@ -1,4 +1,164 @@
 /* pages/order/order.wxss */
-.in_order{
+/* .in_order{
   margin: 20rpx;
+} */
+
+.tabTitle{
+  display: flex;
+  padding: 30rpx;
+  vertical-align: middle;
 }
+.tabTitle .orderTabName{
+  padding: 0 20rpx;
+  color: #6b6b6b;
+  font-size: 40rpx;
+}
+.tabTitle .nav-hover{
+  border: 0;
+  font-size: 44rpx;
+  font-weight: bold;
+  margin-top: -2rpx;
+  color: #222;
+}
+
+.orderTabheader{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.tabContent{
+  margin-top: 285rpx;
+}
+.tabTwoTitle {
+  display: flex;
+  padding: 0 20rpx 30rpx;
+}
+
+
+.tabTwoTitle .orderTabName{
+  padding: 0 30rpx ;
+  color: #656565;
+}
+
+.tabTwoTitle .nav-hover{
+  border-bottom: 0;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+}
+
+.tabTwoTitle .nav-hover::after{
+  content: "";
+  display: block;
+  width: 30%;
+  height: 8rpx;
+  background-color: var(--themeColor);
+  border-radius: 100rpx;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  bottom: -17rpx;
+}
+
+.timeScreenText{
+  text-align: right;
+  font-size: 28rpx;
+  color: #6a6a6a;
+  padding: 20rpx;
+  border-top: 1px solid #eee;
+}
+
+
+.tabContent .orderItem{
+  background-color: #fff;
+  margin: 10rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+}
+
+.timeScreenCon{
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.timeScreenWrap{
+  background-color: #fff;
+  padding: 0 20rpx 20rpx;
+}
+.timeScreenTit{
+  font-size: 29rpx;
+  font-weight: bold;
+}
+.timeScreenBtn{
+  display: flex;
+  margin: 8rpx 0;
+}
+.timeScreenBtn button{
+  flex: 1;
+  padding:15rpx 0;
+  margin: 5rpx;
+  background-color: #f1f2f6;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.timeScreenBtn button.active{
+  background-color: var(--themeColor);
+}
+
+.timeScreenTimeBtn{
+  display: flex;
+}
+.timeScreenTimeBtn picker{
+  flex: 1;
+  background-color: #f1f2f6;
+  padding: 15rpx 30rpx;
+  margin: 5rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  position: relative;
+}
+.timeScreenTimeBtn picker image{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.timeScreenSubBtn{
+  display: flex;
+  margin-top: 10rpx;
+}
+.timeScreenSubBtn button{
+  flex: 1;
+  margin: 5rpx;
+  border-radius: 200rpx;
+}
+.timeScreenSubBtn button.determine{
+  background:var(--themeColor)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

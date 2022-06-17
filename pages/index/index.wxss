@@ -1,4 +1,315 @@
-.top{
+.header{
+  background-color: var(--auxiliary);
+  padding:20rpx 30rpx 60rpx;
+  box-sizing: border-box;
+}
+.fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.headerT_Left image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.h_title{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 15rpx;
+}
+.h_title_h3{
+  font-size: 38rpx;
+  font-weight: bold;
+}
+.h_title_p{
+  color: #878b97;
+  font-size: 28rpx;
+  margin: 10rpx 0;
+}
+.headerTop{
+  display: flex;
+  align-items: center;
+}
+
+.headerT_Left{
+  flex: 2;
+}
+.headerT_right{
+  flex: 1;
+  text-align: right;
+}
+.headerT_right button{
+  width: 80rpx;
+  background: var(--themeColor);
+  display: inline-block;
+  padding: 10rpx 0 ;
+}
+.h_data{
+  display: flex;
+  margin: 50rpx 0;
+  font-size: 28rpx;
+  color: #626767;
+}
+.h_data_item{
+  text-align: center;
+  flex: 1;
+}
+.h_data_num{
+  color: #000;
+  font-weight: bold;
+  font-size: 38rpx;
+  margin: 20rpx 0;
+}
+
+.content{
+  position: relative;
+  z-index: 999;
+  background: #fff;
+  top: 400rpx;
+}
+
+.handleCard{
+  display: flex;
+  border-radius: 35rpx 35rpx 0 0;
+  box-shadow: 0 -30rpx 40rpx rgba(100, 90, 78, 0.05);
+}
+.handleCardItem{
+  flex: 1;
+  text-align: center;
+}
+.handleCardItem .num{
+  font-size: 42rpx;
+  font-weight: bold;
+  margin: 20rpx 0;
+}
+.handleCardItem .text{
+  font-size: 28rpx;
+  color: #8a898d;
+}
+
+.tool{
+  padding: 30rpx 20rpx;
+}
+.tool_title{
+  font-size: 40rpx;
+  font-weight: bold;
+  padding: 30rpx 0;
+}
+.toolCard{
+  display: flex;
+  flex-wrap: wrap;
+}
+.toolCard navigator{
+  width: 25%;
+  text-align: center;
+  margin: 20rpx 0;
+}
+.toolCard image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.toolCard .text{
+  font-size: 28rpx;
+  margin: 15rpx 0;
+}
+
+.order{
+  padding: 0 20rpx;
+}
+
+
+
+
+.ordertab{
+  display: flex;
+  margin:10rpx 0 50rpx;
+}
+
+.orderTabName{
+  padding: 0 20rpx;
+  color: #818181;
+  position: relative;
+}
+.orderTabName.nav-hover {
+  border: 0;
+}
+.orderTabName.nav-hover::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30%;
+  height: 10rpx;
+  border-radius: 100rpx;
+  background: var(--themeColor);
+  bottom: -15rpx;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.sidebarConItem navigator{
+  display: flex;
+  width:100%
+}
+.sidebarConItem navigator image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.sidebarConItem navigator .text{
+  margin-left: 15rpx;
+}
+
+/* 无订单状态 */
+.noorder{
+  text-align: center;
+  color: #8f9094;
+  padding: 120rpx 0;
+  font-size: 29rpx;
+}
+.noorder image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.h_title_text{
+  display: inline-block;
+  vertical-align: middle;
+}
+.close{
+  width: 50rpx;
+  height: 50rpx;
+  display: inline-block;
+  margin-left: 10rpx;
+}
+.close image{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/*侧边栏*/
+.sidebar {
+  background: #fff;
+  box-shadow: 4rpx 4rpx 20rpx rgba(0,0,0,.2);
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  overflow: auto;
+  transform: translate(-600rpx,0);
+  transition: transform .3s;
+  top: 0;
+  width: 400rpx;
+  z-index: 1001;
+}
+.sidebar.show {
+  transform: translate(0,0);
+}
+.sidebar-shade {
+  background: rgba(0,0,0,.7);
+  display: none;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sidebarHeader{
+  text-align: center;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.sidebarText{
+  margin: 15rpx 0;
+}
+.siderbarH_bg{
+  background: var(--themeColor);
+  width: 120rpx;
+  height: 120rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.sidebarHeader image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.sidebarTextH3{
+  font-weight: bold;
+  font-size: 34rpx;
+}
+.sidebarTextState{
+  font-size: 26rpx;
+  background: var(--themeColor);
+  display: inline-block;
+  color: #000;
+  padding: 6rpx 25rpx;
+  border-radius: 100rpx;
+  margin: 10rpx 0;
+}
+
+.sidebarContent{
+  padding: 30rpx 0;
+}
+.sidebarConItem{
+  margin: 10rpx;
+  padding: 20rpx 15rpx;
+  font-size: 28rpx;
+  display: flex;
+}
+.sidebarConItem picker,.sidebarConItem .text{
+  flex: 1;
+}
+
+.wx-switch-input {
+  width: 40px !important;
+  height: 20px !important;
+  box-sizing: border-box;
+  position: relative;
+  border: 0px !important;
+}
+ 
+.wx-switch-input::before {
+  width: 40px !important;
+  height: 20px !important;
+  background: #CCCCCC !important;
+  border: 0px solid #CCCCCC !important;
+  box-shadow: none !important;
+  left: 0px;
+  top: 0px;
+}
+ 
+.wx-switch-input::after {
+  width: 18px !important;
+  height: 18px !important;
+  top: 1px !important;
+  left: 0px !important;
+  opacity: 1 !important;
+  box-sizing: border-box;
+  box-shadow: none !important;
+  border: 0px !important;
+}
+
+.sidebarFooter{
+  position: fixed;
+  bottom: 50rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+  color: #999;
+  line-height: 2;
+}
+
+/* .top{
   background-color: #fbdc0c;
   padding: 20rpx 20rpx 100rpx;
   color: #1b170e;
@@ -200,7 +511,6 @@
 }
 
 
-/* 扫码核单 */
 .saoma{
   position: fixed;
   bottom: 20rpx;
@@ -223,4 +533,4 @@
 }
 
 
-
+ */

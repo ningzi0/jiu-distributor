@@ -1,4 +1,54 @@
-<view class="pic">
+<view class="businessPic">
+
+    <view class="businessPicCon">
+        <view class="imglist" wx:for="{{imgList}}" bindtap="preview" data-index="{{index}}">
+          <image src="{{item}}" mode="aspectFill"></image>
+          <view class="delIcoBtn" hidden="{{hiddenName}}">
+              <image src="https://images.liquorbox.cn/2022-06-14%20business/images/delico.png" class="delIco"></image>
+          </view>
+        </view>
+    </view>
+
+
+    <!-- 上传按钮 -->
+    <view class="uploadFixed">
+      <view class="upload dui" hidden="{{hiddenName}}" bindtap="shghnn">
+            <image src="https://images.liquorbox.cn/2022-06-14%20business/images/dui.png" ></image>
+        </view>
+      <view class="upload del" bindtap="shghnn">
+            <image src="https://images.liquorbox.cn/2022-06-14%20business/images/del.png" ></image>
+        </view>
+        <view class="upload">
+            <image src="https://images.liquorbox.cn/2022-06-14%20business/images/upload.png" ></image>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 原代码 -->
+<!-- <view class="pic">
   <view class="picWrap">
       <image src="/images/license.jpg" mode="aspectFill"></image>
       <view class="close"  hidden="{{hiddenName}}">×</view>
@@ -28,4 +78,4 @@
 <view class="btn">
   <view class="button"  bindtap="shghnn">管理</view>
   <view class="button">上传</view>
-</view>
+</view> -->

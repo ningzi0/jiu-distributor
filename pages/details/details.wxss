@@ -1,0 +1,22 @@
+.details_item{
+  padding: 20rpx;
+  background-color: #fff;
+  margin-bottom: 15rpx;
+}
+.detailsItemTop {
+  display: flex;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.detailsItemTop text:first-child{
+  flex:2
+}
+.detailsIteminfo{
+  font-size: 28rpx;
+  padding: 10rpx 0 0;
+  color: #999;
+}
+
+
+
+

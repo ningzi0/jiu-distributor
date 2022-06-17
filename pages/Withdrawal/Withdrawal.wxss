@@ -92,6 +92,7 @@
   width: 96%;
   margin: 0 auto;
   font-size: 29rpx;
+  height: 150rpx;
 }
 
 .modal-content{

@@ -1,6 +1,8 @@
 /**app.wxss**/
 page{
   background-color: #f4f4f8;
+  --themeColor: #fbdc0c;
+  --auxiliary: #fefbf1;
 }
 .b-radius{
   border-radius: 20rpx;
@@ -277,4 +279,141 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   width: 100%;
   color: #353897;
   text-align: center;
+}
+
+
+
+
+
+/*===============*/
+.orderItemTop{
+  font-size: 24rpx;
+}
+.orderNum,.orderDate{
+  margin-right: 15rpx;
+}
+.orderDate{
+  color: #969696 ;
+}
+.orderState{
+  color: #fe5504;
+}
+.orderItemCon{
+  margin: 25rpx 0 0;
+}
+.orderItemCon image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+  border: 1px solid #eee;
+}
+.orderItemConRight{
+  width: 76%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}
+.orderItemTit text{
+  font-size: 32rpx;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+.orderItemTit text:first-child{
+  width: 75%;
+}
+.orderItemTit text:last-child{
+  font-weight: 500;
+  font-size: 30rpx;
+  float: right;
+  color: #454545;
+}
+.orderItemNorms{
+  display: flex;
+  margin: 10rpx 0;
+}
+.orderItemNorms .orderItemNormsText{
+  flex: 1;
+}
+.orderItemNorms .orderItemNormsText:first-child text{
+  background-color: #eef2fe;
+  font-size: 28rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+}
+.orderItemNorms .orderItemNormsText:last-child{
+  text-align: right;
+  color: #fe5504;
+}
+.orderNumPrice{
+  text-align: right;
+  font-size: 28.5rpx;
+  color: #9a9a9a;
+  margin: 20rpx 0;
+}
+
+.orderNumPrice text{
+  color: #fe5504;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+
+
+.information{
+  background-color: #f6f7fb;
+  border-radius: 15rpx;
+  padding: 20rpx;
+  margin: 10rpx 0;
+}
+.addico{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+}
+
+.addico image{
+  width: 100%;
+  height: 100%;
+  margin-top: 15rpx;
+}
+.information .info{
+  display: inline-block;
+  width: 70%;
+  font-size: 28rpx;
+  vertical-align: top;
+  line-height: 2;
+  margin-left: 15rpx;
+}
+.twoico{
+  width: 20%;
+  display: inline-block;
+}
+.twoico image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.orderBtn{
+  text-align: right;
+  padding: 20rpx 0 30rpx;
+}
+.orderBtn navigator{
+  display: inline-block;
+  background: #f6f7fb;
+  padding: 15rpx 70rpx;
+  margin-left: 10rpx;
+  border-radius: 100rpx;
+}
+.orderItem{
+  border-bottom: 1px solid #f6f7fb;
+}
+
+.footer{
+  text-align: center;
+  font-size: 28rpx;
+  padding: 50rpx 0;
+  color: rgba(0, 0, 0, 0.2);
 }

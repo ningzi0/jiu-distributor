@@ -1,5 +1,217 @@
-<view class="app">
-    <!-- top -->
+
+<view class="header fixed">
+        <view class="headerTop">
+                <view class="headerT_Left">
+                        <image src="https://images.liquorbox.cn/2022-06-14%20business/images/yJqeOwe1vr.jpg" mode="aspectFill"></image>
+                        <view class="h_title">
+                                <view class="h_title_h3">
+                                    <view class="h_title_text">午后凌风酒吧 </view>
+                                    <view class="close">
+                                        <image  bindtap="onChange" src="https://images.liquorbox.cn/2022-06-14%20business/images/close.png"></image>
+                                    </view>
+                                </view>
+                                <view class="h_title_p">待审核</view>
+                        </view>
+                </view>
+                <!-- <view class="headerT_right">
+                        <button>+</button>
+                </view> -->
+        </view>
+        <view class="h_data">
+            <block wx:for="{{h_data}}">
+                <view class="h_data_item">
+                    <view class="h_data_tit">{{item.h_data_tit}}</view>
+                    <view class="h_data_num">{{item.h_data_num}}</view>
+                    <view class="h_data_contrast">昨日 {{item.h_data_contrast}}</view>
+                </view>
+            </block>
+        </view>
+</view>
+
+
+
+<view class="sidebar {{open?'show':''}}">
+        <view class="sidebarHeader">
+            <view class="siderbarH_bg">
+                <image src="https://images.liquorbox.cn/2022-06-14%20business/images/yJqeOwe1vr.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="sidebarText">
+                <view class="sidebarTextH3">午后凌风酒吧</view>
+                <view class="sidebarTextState">待审核</view>
+            </view>
+        </view>
+
+        <view class="sidebarContent">
+                <view class="sidebarConItem">
+                    <view class="text">开店时间：</view>
+                    <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+                        <view class="picker">
+                        {{time}}
+                        </view>
+                    </picker>
+                </view>
+                <view class="sidebarConItem">
+                    <view class="text">关店时间：</view>
+                    <picker mode="time" value="{{time2}}" start="00:00" end="23:59" bindchange="bindTimeChange2">
+                        <view class="picker">
+                        {{time2}}
+                        </view>
+                    </picker>
+                </view>
+                <view class="sidebarConItem">
+                    <view class="text">开启店铺：</view>
+                    <switch checked="{{switch1Checked}}" class="wx-switch-input" bindchange="switch1Change"/>
+                </view>
+                <view class="sidebarConItem">
+                    <navigator hover-class="none" url="/pages/businessPic/businessPic">
+                        <image src="https://images.liquorbox.cn/2022-06-14%20business/images/tupiantianchong.png"></image>
+                        <view class="text">图片管理</view>
+                    </navigator>
+                </view>
+        </view>
+
+        <view class="sidebarFooter">
+                <view class="online">客服热线：400-5588-8855</view>
+                <view class="edition">版本号：v0.0.0.003</view>
+        </view>
+
+
+
+
+</view>
+<view class="sidebar-shade" style="display:{{open?'block':''}}" bindtap="onChange"></view>
+
+<view class="content">
+    <view class="handleCard">
+            <view class="handleCardItem">
+                <navigator hover-class="none">
+                    <view class="num">0</view>
+                    <view class="text">待发货</view>
+                </navigator>
+            </view>
+            <view class="handleCardItem">
+                <navigator hover-class="none">
+                    <view class="num">0</view>
+                    <view class="text">已发货</view>
+                </navigator>
+            </view>
+            <view class="handleCardItem">
+                <navigator hover-class="none">
+                    <view class="num">0</view>
+                    <view class="text">待售后</view>
+                </navigator>
+            </view>
+    </view>
+
+    <view class="tool">
+        <view class="tool_title">
+                <text>常用工具</text>
+        </view>
+        <view class="toolCard">
+            <block wx:for="{{toolCard}}">
+                <navigator hover-class="none">
+                        <image src="{{item.image}}" mode="aspectFill"></image>
+                        <view class="text">{{item.text}}</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+
+    <view class="order">
+        <view class="tool_title">
+                <text>订单管理</text>
+        </view>
+
+        <view class="ordertab">
+            <view class="orderTabName {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+                <view class="orderTabItem">
+                        <text>{{item.orderTabItem}}</text>
+                </view>
+            </view>
+            <view class="orderTabName"  >
+                <view class="orderTabItem">
+                    <navigator hover-class="none" url="/pages/order/order">
+                        <text>全部</text>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+
+        <view class="orderConWrap">
+            <view hidden='{{currentId!=1}}'>
+                <view class="orderCon">
+                        <view class="orderItem">
+                                <view class="orderItemTop">
+                                        <text class="orderNum">订单编号：2022061417050001</text>
+                                        <text class="orderDate">6月13日 21:01下单</text> 
+                                        <text class="orderState">等待发货</text>
+                                </view>
+                                <view class="orderItemCon">
+                                    <navigator hover-class="none" url="/pages/orderShow/orderShow">
+                                        <image src="https://images.liquorbox.cn/2022-06-14%20business/images/1.jpg" mode="aspectFill"></image>
+                                        <view class="orderItemConRight">
+                                                <view class="orderItemTit">
+                                                    <text>LIQUORBOX精酿白啤酒小麦精酿</text>
+                                                    <text>￥42.00</text>
+                                                </view>
+                                                <view class="orderItemNorms">
+                                                    <view class="orderItemNormsText">
+                                                        <text>单瓶500ml</text>
+                                                    </view>
+                                                    <view class="orderItemNormsText">
+                                                        <text>x2</text>
+                                                    </view>
+                                                </view>
+                                        </view>
+                                    </navigator>
+                                </view>
+                                <view class="orderNumPrice">
+                                        共<text> 2 </text>件 实收：<text>￥84.00</text>（含快递：￥0.00）
+                                </view>
+                                <view class="information">
+                                        <view class="addico">
+                                            <image src="https://images.liquorbox.cn/2022-06-14%20business/images/addico.png" mode="aspectFill"></image>
+                                        </view>
+                                        <view class="info">陈超，86-15965663325，贵州省 贵阳市 南明区 机场路首开紫郡14栋2单元601</view>
+                                        <view class="twoico">
+                                                <image src="https://images.liquorbox.cn/2022-06-14%20business/images/eyes.png"></image>
+                                                <image src="https://images.liquorbox.cn/2022-06-14%20business/images/copy.png"></image>
+                                        </view>
+                                </view>
+                                <view class="orderBtn">
+                                        <navigator hover-class="none">取消</navigator>
+                                        <navigator hover-class="none">发货</navigator>
+                                </view>
+                        </view>
+                </view>
+            </view>
+            <view hidden='{{currentId!=2}}'>
+                    <view class="noorder">
+                            <image src="https://images.liquorbox.cn/2022-06-14%20business/images/noOrder.png"></image>
+                            <view class="p">还没有相关订单哦！</view>
+                    </view>
+            </view>
+        </view>
+        <view class="footer">
+            <view class="text">没有更多订单了</view>
+            <view class="text">客服热线：400-5588-8855</view>
+        </view>
+
+    </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="app">
     <view class="top">
         <view class="name">贵州午后凌风酒吧</view>
         <view class="t_right">
@@ -16,7 +228,6 @@
             </view>
         </view>
     </view>
-    <!-- 销售量及商家货款 -->
     <view class="sale b-radius b-shadow">
         <view class="sale_item">
           <navigator hover-class="none" url="/pages/analysis/analysis">
@@ -33,7 +244,6 @@
           </navigator>
         </view>
     </view>
-    <!-- 待办任务 -->
     <view class="task b-radius m20 b-shadow">
         <view class="taskTitle">
             <view class="t_t_item t_t_tit">
@@ -72,7 +282,6 @@
         </view>
     </view>
 
-    <!-- 按钮 -->
     <view class="index_btn m20 b-radius b-shadow">
         <navigator hover-class="none">
             <view class="img">
@@ -94,7 +303,6 @@
         </navigator>
     </view>
 
-    <!-- 订单管理---商品管理 -->
     <view class="order-pro m20">
         <view class='top_nav b-radius'>
             <view class="nav-name {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
@@ -107,7 +315,7 @@
 
         <view class="o_p_Content">
             <view hidden='{{currentId!=1}}' style="height: 100%;">
-                <!-- tips -->
+               
                 <view class="tips b-radius">订单管理是指顾客在小程序端下单并分配到就近分销商处取货的订单。</view>
                 <view class="in_order b-radius">
                     <view class="inorder_item">
@@ -211,8 +419,7 @@
 
 </view>
 
-<!-- 扫码核单 -->
         <view class="saoma" bindtap="saoma">
             <image src="/images/saoma.png"></image>
             <view class="text">验证</view>
-        </view>
+        </view> -->

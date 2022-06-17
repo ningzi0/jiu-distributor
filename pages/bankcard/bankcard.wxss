@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   border-radius: 15rpx;
+  position: relative;
 }
 .bankcardItem image{
   width: 100rpx;
@@ -44,4 +45,14 @@
 
 
 
-
+/* 解绑 */
+.Unbound{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+  font-size: 28rpx;
+  width: 100rpx !important;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}

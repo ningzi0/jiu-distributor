@@ -5,9 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
+    imgList: [
+      "https://images.liquorbox.cn/2022-06-14%20business/images/pic1.jpg",
+      "https://images.liquorbox.cn/2022-06-14%20business/images/pic2.jpg",
+      "https://images.liquorbox.cn/2022-06-14%20business/images/pic3.jpg",
+      "https://images.liquorbox.cn/2022-06-14%20business/images/pic4.jpg",
+      "https://images.liquorbox.cn/2022-06-14%20business/images/pic5.jpg",
+      "https://images.liquorbox.cn/2022-06-14%20business/images/pic6.jpg",
+      "https://images.liquorbox.cn/2022-06-14%20business/images/pic1.jpg",
+      "https://images.liquorbox.cn/2022-06-14%20business/images/pic2.jpg",
+      ],
     hiddenName:true
+  },  
+//预览图片，放大预览
+preview(event) {
+  let index = event.currentTarget.dataset.index
+  wx.previewImage({
+  current: this.data.imgList[index], // 当前显示图片的http链接
+  urls: this.data.imgList // 需要预览的图片http链接列表
+  })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

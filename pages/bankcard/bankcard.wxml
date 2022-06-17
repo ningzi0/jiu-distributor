@@ -8,6 +8,7 @@
                 <view class="bankcardNumber"> * * * * * * * * * * * * * * * * 6 5 8 9</view>
             </view>
         </navigator>
+        <button class="Unbound">解绑</button>
     </view>
 </view>
 

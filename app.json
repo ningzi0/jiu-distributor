@@ -25,39 +25,17 @@
     "pages/addbankcard/addbankcard",
     "pages/refund/refund",
     "pages/businessPic/businessPic",
+    "pages/details/details",
+    "pages/orderShow/orderShow",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fbdc0c",
+    "navigationBarBackgroundColor": "#fefbf1",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
-  "tabBar": {
-    "color": "#7e7e7e",
-    "selectedColor": "#000",
-    "backgroundColor": "#ffffff",
-    "borderStyle": "white",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "/images/tabar1.png",
-      "selectedIconPath": "/images/tabar1_active.png"
-    },
-    {
-      "pagePath": "pages/menu/menu",
-      "text": "进货",
-      "iconPath": "/images/tabar2.png",
-      "selectedIconPath": "/images/tabar2_active.png"
-    },
-    {
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath": "/images/tabar4.png",
-      "selectedIconPath": "/images/tabar4_active.png"
-    }]
-  },
-
+  
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

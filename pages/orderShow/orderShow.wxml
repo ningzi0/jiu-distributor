@@ -1,0 +1,123 @@
+<!--pages/orderShow/orderShow.wxml-->
+<view class="orderShow">
+    <view class="orderShowItem">
+        <view class="title">当前订单状态：商家已发货，等待买家确认</view>
+        <view class="p">买家(panpan2783100)还有7天22小时21分16秒来完成本次交易的“确认收货”。如果期间买家(panpan2783100)没有“确认收货”，也没有申请退款，本交易将自动结束，该笔货款将支付给您。</view>
+    </view>
+    <view class="orderShowItem">
+        <view class="title">发货信息 <image src="https://images.liquorbox.cn/2022-06-14%20business/images/eyes2.png" mode="aspectFill"></image></view>
+        <view class="deliverGoods">
+            <view class="deliverGoodsItem deliverGoodsTitle">发货信息</view>
+            <view class="deliverGoodsItem deliverGoodsInfo">陈超，86-15911123556，贵州省 贵阳市 南明区 机场路首开紫郡紫香堤同14栋2单元601</view>
+        </view>
+        <view class="copy">
+            <button>复制收货信息</button>
+        </view>
+    </view>
+    <view class="orderShowItem Buyer">
+        <view class="title">买家信息</view>
+        <view class="deliverGoods">
+            <view class="deliverGoodsItem deliverGoodsTitle">买家昵称</view>
+            <view class="deliverGoodsItem deliverGoodsInfo">panpan2783100</view>
+        </view>
+        <view class="deliverGoods">
+            <view class="deliverGoodsItem deliverGoodsTitle">联系手机</view>
+            <view class="deliverGoodsItem deliverGoodsInfo">15911123556</view>
+        </view>
+    </view>
+    <view class="orderShowItem goods">
+        <view class="title">商品信息</view>
+        <view class="goodsContent">
+            <view class="orderItem">
+                <view class="orderItemCon">
+                    
+                        <image src="https://images.liquorbox.cn/2022-06-14%20business/images/1.jpg" mode="aspectFill"></image>
+                        <view class="orderItemConRight">
+                                <view class="orderItemTit">
+                                    <text>LIQUORBOX精酿白啤酒小麦精酿</text>
+                                    <text>￥42.00</text>
+                                </view>
+                                <view class="orderItemNorms">
+                                    <view class="orderItemNormsText">
+                                        <text>单瓶500ml</text>
+                                    </view>
+                                    <view class="orderItemNormsText">
+                                        <text>x2</text>
+                                    </view>
+                                </view>
+                        </view>
+                </view>
+                <view class="orderNumPrice">
+                        共<text> 2 </text>件 实收：<text>￥84.00</text>（含快递：￥0.00）
+                </view>
+                
+            </view>
+        </view>
+    </view>
+    <view class="orderShowItem Buyer">
+        <view class="title">订单信息</view>
+        <view class="deliverGoods">
+            <view class="deliverGoodsItem deliverGoodsTitle">订单编号</view>
+            <view class="deliverGoodsItem deliverGoodsInfo">2022061417050001</view>
+        </view>
+        <view class="deliverGoods">
+            <view class="deliverGoodsItem deliverGoodsTitle">创建时间</view>
+            <view class="deliverGoodsItem deliverGoodsInfo">2022-06-13 21:01:01</view>
+        </view>
+        <view class="deliverGoods">
+            <view class="deliverGoodsItem deliverGoodsTitle">付款时间</view>
+            <view class="deliverGoodsItem deliverGoodsInfo">2022-06-13 21:01:03</view>
+        </view>
+    </view>
+</view>
+
+
+<view class="btn">
+    <button>删除订单</button>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

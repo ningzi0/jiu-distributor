@@ -36,3 +36,10 @@
 }
 
 
+
+.modal-content{
+  text-align: center;
+}
+.btn-confirm{
+  flex: 1;
+}

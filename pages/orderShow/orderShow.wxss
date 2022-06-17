@@ -1,0 +1,97 @@
+/* pages/orderShow/orderShow.wxss */
+.orderShow{
+  margin-bottom: 140rpx;
+}
+.orderShowItem{
+  background-color: #fff;
+  margin: 15rpx;
+  padding: 30rpx;
+  border-radius: 20rpx;
+}
+.orderShowItem .title{
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.orderShowItem .p{
+  font-size: 26rpx;
+  margin-top: 15rpx;
+  line-height: 1.75;
+  color: #868283;
+}
+.deliverGoods{
+  display: flex;
+}
+.deliverGoods{
+  margin: 15rpx 0;
+  font-size: 28rpx;
+}
+.deliverGoodsTitle{
+  width: 350rpx;
+}
+.deliverGoodsTitle{
+  line-height: 1.75;
+}
+.deliverGoodsInfo{
+  line-height: 1.75;
+  color: #868283;
+}
+.orderShowItem .title image{
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+  position: relative;
+  top: -3rpx;
+}
+.orderShowItem .copy{
+  text-align: right;
+}
+.orderShowItem .copy button{
+  border-radius: 200rpx;
+  display: inline-block;
+  font-size: 30rpx;
+  font-weight: 500;
+  padding: 10rpx 30rpx;
+  width: auto;
+}
+.Buyer .deliverGoodsInfo{
+  text-align: right;
+  width: 335rpx;
+}
+.orderItemConRight {
+  width: 75%;
+}
+
+.btn{
+  background-color: #fff;
+  padding: 20rpx;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 0 20rpx rgba(0,0,0,0.05);
+  box-sizing: border-box;
+}
+
+.btn button{
+  display: inline-block;
+  border-radius: 200rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<view class="details">
+    <view class="details_item">
+        <view class="detailsItemTop">
+            <text>提现明细-到工商银行(5386)</text>
+            <text>11.10</text>
+        </view>
+        <view class="detailsIteminfo">
+            <text>2022-05-20 13:59</text>
+        </view>
+    </view>
+    <view class="details_item">
+        <view class="detailsItemTop">
+            <text>提现明细-到工商银行(5386)</text>
+            <text>11.10</text>
+        </view>
+        <view class="detailsIteminfo">
+            <text>2022-05-20 13:59</text>
+        </view>
+    </view>
+    <view class="details_item">
+        <view class="detailsItemTop">
+            <text>提现明细-到工商银行(5386)</text>
+            <text>11.10</text>
+        </view>
+        <view class="detailsIteminfo">
+            <text>2022-05-20 13:59</text>
+        </view>
+    </view>
+    <view class="details_item">
+        <view class="detailsItemTop">
+            <text>提现明细-到工商银行(5386)</text>
+            <text>11.10</text>
+        </view>
+        <view class="detailsIteminfo">
+            <text>2022-05-20 13:59</text>
+        </view>
+    </view>
+</view>
