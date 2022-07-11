@@ -27,6 +27,7 @@
     "pages/businessPic/businessPic",
     "pages/details/details",
     "pages/orderShow/orderShow",
+    "pages/pro/pro",
     "pages/logs/logs"
   ],
   "window":{

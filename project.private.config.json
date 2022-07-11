@@ -200,6 +200,13 @@
           "name": "订单详情",
           "pathName": "pages/orderShow/orderShow",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "商品管理",
+          "pathName": "pages/pro/pro",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

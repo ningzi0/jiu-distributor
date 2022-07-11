@@ -1,0 +1,36 @@
+/* pages/pro/pro.wxss */
+.pro{
+  padding: 20rpx;
+}
+.pro .title{
+  font-size: 44rpx;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 15rpx;
+}
+.orderItem{
+  background-color: #fff;
+  margin: 15rpx 0;
+  padding:  15rpx ;
+  border-radius: 15rpx;
+}
+.information .info{
+  width: 100%;
+  display: flex;
+}
+.information .info .text{
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #eee;
+}
+.information .info .text:last-child{
+  border: 0;
+}
+.orderItemTit text:last-child {
+  float: none;
+  width: 100%;
+}
+.orderItemNorms .orderItemNormsText:last-child{
+  text-align: left;
+}
