@@ -7,6 +7,7 @@
 }
 .aftersaleShowContent{
   background-color: #fff;
+  margin-bottom: 90rpx;
 }
 .aftersaleShowContent .item .span ,.aftersaleShowContent .item .font{
   display: inline-block;
@@ -25,6 +26,17 @@
 .aftersaleShowContent .item .colorblue{
   color: #3c94eb;
 }
+.aftersaleShowContent .item image{
+
+}
+.aftersaleShowContent .item image:active{
+  opacity: 0.5;
+}
+.aftersaleShowContent .item text,.aftersaleShowContent .item image{
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 .btn{
   position: fixed;
@@ -123,3 +135,23 @@
 
 
 
+.aftersaleShowContent .item  .pic{
+  display: inline-block;
+  vertical-align: middle;
+}
+.aftersaleShowContent .item  image{
+  width: 140rpx;
+  height: 140rpx;
+  border: 1px solid #eee;
+  margin-right: 10rpx;
+  padding: 10rpx;
+}
+.aftersaleShowContent  .tel image{
+  width: 80rpx;
+  height: 80rpx;
+  padding: 10rpx;
+  margin-left: 10rpx;
+  box-sizing: border-box;
+  border: 0;
+  margin-right: 0;
+}

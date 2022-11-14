@@ -22,6 +22,16 @@
               <view class="span">申请理由：</view>
               <view class="font">不想要了</view>
           </view>
+          
+          <view class="item">
+              <view class="span">相关图片：</view>
+              <view class="font">
+                <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+                        <image class='weui-uploader__img ' src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg"></image>
+                     
+                  </view>
+              </view>
+          </view>
       </view>
       <view class="title">订单信息</view>
       <view class="aftersaleShowContent">
@@ -40,6 +50,11 @@
           <view class="item">
               <view class="span">出库信息：</view>
               <view class="font colorblue">待出库</view>
+          </view>
+          
+          <view class="item tel">
+              <view class="span">用户电话：</view>
+              <view class="font colorblue"><text>15185070538</text>  <image src="/images/boda.png"></image></view>
           </view>
       </view>
 

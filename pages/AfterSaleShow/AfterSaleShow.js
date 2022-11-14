@@ -8,13 +8,26 @@ Page({
     viewId : 0,
     currentId: '1',
     showModal: false,
+    imgs: ['https://images.liquorbox.cn/2022-06-10/images/1.jpg','https://images.liquorbox.cn/2022-06-10/images/2.jpg','https://images.liquorbox.cn/2022-06-10/images/3.jpg'],
   },
   showDialogBtn: function () {
     this.setData({
       showModal: true
     })
   },
-  
+  // 预览图片
+previewImg: function (e) {
+  //获取当前图片的下标
+  var index = e.currentTarget.dataset.index;
+  //所有图片
+  var imgs = this.data.imgs;
+  wx.previewImage({
+    //当前显示图片
+    current: imgs[index],
+    //所有图片
+    urls: imgs
+  })
+},
   /**
    * 隐藏模态对话框
    */
