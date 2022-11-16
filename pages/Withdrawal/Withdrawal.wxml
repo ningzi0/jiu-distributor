@@ -1,13 +1,14 @@
 <view class="withdrawal">
-    <view class="withdrawal_top"  bindtap="showDialogBtn">
-        <view class="w_t_span w_t_item">到账银行卡</view>
-        <view class="w_t_font w_t_item"> <image src="/images/abc.png" ></image> 安顺农村商银行股份有限公司南马支行</view>
+    <view class="withdrawal_top" >
+        <image src="/images/weixinzhifu.png" ></image>
+        <view class="w_t_span w_t_item">提现到微信零钱</view>
+        <!--  bindtap="showDialogBtn" <view class="w_t_font w_t_item"> <image src="/images/abc.png" ></image> 安顺农村商银行股份有限公司南马支行</view>
         <view class="w_t_item tags">
             <text>默认</text>
-        </view>
-        <view class="w_t_item arr_right">
+        </view> -->
+        <!-- <view class="w_t_item arr_right">
             <image src="/images/arr_right.png"></image>
-        </view>
+        </view> -->
     </view>
 
     <view class="Withdrawal_Amount">
@@ -26,11 +27,47 @@
     
     
     <view class="tx_button">
-        <button>预计2小时到账，确认提现</button>
+        <button>预计3-5个工作日到账，确认提现</button>
         <textarea name="" placeholder="添加备注（16字以内可选填）" placeholder-style="color:#ccc"></textarea>
     </view>
 
 </view>
+
+
+<view class="detailed">
+    <view class="h3">提现明细</view>
+        <view class="item tit">
+            <text>序号</text>
+            <text>金额</text>
+            <text>状态</text>
+            <text>日期</text>
+        </view>
+        <view class="item">
+            <text>1</text>
+            <text>300</text>
+            <text>申请中</text>
+            <text>2022-11-16</text>
+        </view>
+        <view class="item">
+            <text>2</text>
+            <text>200</text>
+            <text>已完成</text>
+            <text>2022-11-15</text>
+        </view>
+        
+        <view class="item">
+            <text>3</text>
+            <text>100</text>
+            <text>已完成</text>
+            <text>2022-11-14</text>
+        </view>
+</view>
+
+
+
+
+
+
 
 
 

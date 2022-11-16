@@ -3,15 +3,18 @@
   background-color: #fff;
   margin: 15rpx;
   border-radius: 15rpx;
-  padding: 40rpx 30rpx;
+  padding: 25rpx 30rpx;
   box-sizing: border-box;
   font-size: 30rpx;
   display: flex;
   align-items: center;
 }
 
-.withdrawal_top .w_t_span{
-  font-weight: bold;
+
+.withdrawal_top image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
 }
 .withdrawal_top .w_t_font{
   width: 51%;
@@ -136,3 +139,34 @@
 
 
 
+.w_t_span {
+  font-size: 32rpx;
+}
+
+
+.detailed{
+  text-align: center;
+  margin: 20rpx;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.detailed .item{
+  display: flex;
+  font-size: 28rpx;
+}
+.detailed .item:nth-child(odd){
+  background-color: #fafafa;
+}
+.detailed .item text:first-child{
+  flex: 1;
+}
+.detailed .item text{
+  flex: 2;
+  padding: 20rpx;
+}
+.detailed .h3{
+  text-align: left;
+  padding: 20rpx 30rpx;
+  border-bottom: 1px solid #eee;
+
+}
