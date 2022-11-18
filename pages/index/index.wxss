@@ -534,3 +534,37 @@
 
 
  */
+
+
+
+
+ /*消息接收提醒*/
+.messages{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 5555;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 50rpx 20rpx;
+  box-shadow: 0 0 20rpx rgba(0,0,0,0.1);
+}
+.messages text{
+  flex: 2;
+  font-size: 30rpx;
+}
+.messages text,.messages .button{
+  flex: 1;
+}
+.messages .button button{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10rpx 0;
+  width: 42%;
+  margin: 0 10rpx;
+}
+.messages .button button.open{
+  background: rgb(255, 208, 0);
+}

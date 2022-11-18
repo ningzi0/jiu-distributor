@@ -205,7 +205,13 @@
 
 
 
-
+<view class="messages">
+    <text>是否开启消息接收功能？</text>
+    <view class="button">
+        <button class="open">开启</button>
+        <button class="shut">关闭</button>
+    </view>
+</view>
 
 
 
