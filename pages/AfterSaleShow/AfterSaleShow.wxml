@@ -33,6 +33,50 @@
               </view>
           </view>
       </view>
+
+      <view class="orderlist">
+        <view class="orderCon">
+            <view class="orderCitem">
+                  <checkbox></checkbox>
+                <view class="orderCiTtile">
+                
+                    <text>外卖</text>
+                    <text>首开紫郡 紫香堤 14栋2单元首开紫郡 紫香堤 14栋2单元首开紫郡 紫香堤 14栋2单元</text>
+                    <text>待收货</text>
+                </view>
+                <view class="orderCiCon">
+                  <label>
+                      <checkbox></checkbox>
+                      <view class="pic">
+                        <image src="/images/pro1.jpg" mode="aspectFill"></image>
+                      </view>
+                      <view class="orderCinfo">
+                          <view class="title">酒精盒子专售啤酒500ml/瓶</view>
+                          <view class="info">酒精度:12vol% 原产地:中国</view>
+                          <view class="num">数量: x1</view>
+                      </view>
+                      <view class="price">￥45</view>
+                  </label>
+                </view>
+                <view class="orderCiCon">
+                  <label>
+                      <checkbox></checkbox>
+                      <view class="pic">
+                        <image src="/images/pro1.jpg" mode="aspectFill"></image>
+                      </view>
+                      <view class="orderCinfo">
+                          <view class="title">酒精盒子专售啤酒500ml/瓶</view>
+                          <view class="info">酒精度:12vol% 原产地:中国</view>
+                          <view class="num">数量: x1</view>
+                      </view>
+                      <view class="price">￥45</view>
+                  </label>
+                </view>
+            </view>
+        </view>
+    </view>
+
+
       <view class="title">订单信息</view>
       <view class="aftersaleShowContent">
           <view class="item">

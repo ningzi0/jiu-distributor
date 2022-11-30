@@ -1,13 +1,13 @@
 .aftersaleshow {
   font-size: 30rpx;
+  padding-bottom: 80rpx;
 }
 .aftersaleshow .title{
   padding: 25rpx 20rpx;
-  background-color: #ededed;
 }
 .aftersaleShowContent{
   background-color: #fff;
-  margin-bottom: 90rpx;
+  margin-bottom: 15rpx;
 }
 .aftersaleShowContent .item .span ,.aftersaleShowContent .item .font{
   display: inline-block;
@@ -155,3 +155,88 @@
   border: 0;
   margin-right: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.orderlist{
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.orderCon{
+  padding: 30rpx;
+}
+
+.orderCiTtile{
+  font-size: 29rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10rpx;
+  width: 92%;
+  display: inline-block;
+}
+.orderCiTtile text{
+  display: inline-block;
+  margin-right: 30rpx;
+  vertical-align: top;
+}
+.orderCiTtile text:nth-child(1){
+  padding: 5rpx 15rpx;
+  background-color: #fae325;
+  border-radius: 10rpx;
+}
+.orderCiTtile text:nth-child(2){
+  width: 55%;
+}
+.orderCiTtile text:nth-child(3){
+  float: right;
+}
+
+.orderCiCon .pic{
+  width: 200rpx;
+  height: 200rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.orderCiCon .pic image{
+  width: 100%;
+  height: 100%;
+}
+.orderCinfo{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.55;
+  width: 53%;
+}
+.orderCinfo .info,.orderCinfo .num{
+  font-size: 28rpx;
+  color: #666;
+}
+.orderCinfo .title{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0;
+}
+
+.orderCiCon{
+  border-bottom: 1px solid #eee;
+}
+.orderCiCon .price{
+  display: inline-block;
+  margin-left: 4rpx;
+  color: rgb(221, 80, 24);
+  font-weight: bold;
+}
+
+
