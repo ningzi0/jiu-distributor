@@ -30,7 +30,8 @@
     },
     "useStaticServer": true,
     "showES6CompileOption": false,
-    "useCompilerPlugins": false
+    "useCompilerPlugins": false,
+    "condition": false
   },
   "compileType": "miniprogram",
   "condition": {
@@ -51,20 +52,14 @@
       "list": []
     }
   },
-  "scripts": {},
   "appid": "wx3bf15eed5dc65e0b",
   "libVersion": "2.23.1",
   "packOptions": {
     "ignore": [],
     "include": []
   },
-  "watchOptions": {
-    "ignore": []
-  },
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "staticServerOptions": {
-    "servePath": ""
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
   }
 }

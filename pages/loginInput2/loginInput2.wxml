@@ -1,0 +1,61 @@
+<view class="input-example">
+  <t-cell t-class-title="t-cell-title" required title="公司名称">
+    <view slot="note" class="textarea__wrapper">
+      <t-input borderless placeholder="输入公司名称" align="right" />
+    </view>
+  </t-cell>
+  <t-cell t-class-title="t-cell-title" required title="联系人">
+    <view slot="note" class="textarea__wrapper">
+      <t-input borderless placeholder="输入联系人" align="right" />
+    </view>
+  </t-cell>
+  <t-cell t-class-title="t-cell-title" required title="手机号">
+    <view slot="note" class="textarea__wrapper">
+      <t-input placeholder="输入手机号码" borderless value="{{phoneNumber}}" type="number" tips="{{phoneError ? '手机号输入不正确' : ''}}" bindchange="onPhoneInput" align="right"></t-input>
+    </view>
+  </t-cell>
+
+  <t-cell title="地址" hover required note="{{note}}" bind:click="showCascader" arrow />
+
+  <t-cell t-class-title="t-cell-title" required title="详细地址">
+    <view slot="note" class="textarea__wrapper">
+      <t-input style="{{style}}" borderless align="right" placeholder="门牌号等(如10栋1003号)" />
+    </view>
+  </t-cell>
+  <t-cell class="mb-16" title="选择证件上传" required arrow hover note="{{cityText}}" bind:click="onCityPicker" />
+
+  <t-picker visible="{{cityVisible}}" value="{{cityValue}}" data-key="city" title="选择证件" cancelBtn="取消" confirmBtn="确认" bindchange="onPickerChange" bindpick="onColumnChange" bindcancel="onPickerCancel">
+    <t-picker-item options="{{citys}}" />
+  </t-picker>
+
+  <t-cascader visible="{{visible}}" value="{{value}}" options="{{options}}" title="请选择地址" bind:change="onChange" bind:pick="onPick" />
+
+  <!-- 身份证上传 -->
+  <view class="ID-mian">
+
+    
+    <!-- 营业执照上传 -->
+    <view class="card-list">
+      <image src='{{photos3}}' id="3" bindtap='touchphoto' mode='aspectFit'></image>
+      <view>上传营业执照</view>
+    </view>
+
+
+    <view class="card-cont">
+      <view class="card-list">
+        <image src='{{photos}}' id="1" bindtap='touchphoto' mode='aspectFit'></image>
+        <view>身份证正面照</view>
+      </view>
+      <view class="card-list">
+        <image src='{{photos2}}' id="2" bindtap='touchphoto' mode='aspectFit'></image>
+        <view>身份证反面照</view>
+      </view>
+    </view>
+
+
+  </view>
+
+
+
+
+</view>

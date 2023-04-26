@@ -13,6 +13,7 @@
     "pages/analysis/analysis",
     "pages/login/login",
     "pages/loginInput/loginInput",
+    "pages/loginInput2/loginInput2",
     "pages/agreement/agreement",
     "pages/phone/phone",
     "pages/news/news",
@@ -28,6 +29,7 @@
     "pages/details/details",
     "pages/orderShow/orderShow",
     "pages/pro/pro",
+    "pages/Upload/Upload",
     "pages/logs/logs"
   ],
   "window":{
@@ -37,6 +39,5 @@
     "navigationBarTextStyle":"black"
   },
   
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

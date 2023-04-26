@@ -1,12 +1,39 @@
-/**index.wxss**/
-page{
-  width: 100%;
-  height: 100%;
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40rpx;
 }
-.container{
-  height: 100%;
+.delete{
+  flex: 1;
+  text-align: center;
 }
-ec-canvas {
-  width: 100%;
-  height: 100%;
+.show{
+  visibility: visible;
+}
+.hidden{
+  visibility: hidden;
+}
+.icon{
+  width: 35rpx;
+  height: 35rpx;
+}
+.zhong{
+  flex: 5;
+  position: relative;
+}
+.im1{
+  position: absolute;
+  width: 96%;
+  margin-left: 2%;
+}
+.im2{
+  width: 84%;
+  height: 266rpx;
+  margin-left: 8%;
+  margin-top: 4%;
+}
+.add{
+  flex: 1;
+  text-align: center;
 }

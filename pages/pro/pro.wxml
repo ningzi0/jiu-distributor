@@ -18,25 +18,13 @@
                                                     <text>单瓶500ml</text>
                                                 </view>
                                             </view>
+                                            <view class="orderItemNorms">
+                                                <view class="orderItemNormsText">
+                                                    <text>待审核</text>
+                                                </view>
+                                            </view>
                                     </view>
                                 </navigator>
-                            </view>
-                            <view class="information">
-                                    <view class="info">
-                                        <view class="text">
-                                            <view class="textTitle">进货数量</view>
-                                            <view class="textNum">200</view>
-                                        </view>
-                                        <view class="text">
-                                            <view class="textTitle">销售数量</view>
-                                            <view class="textNum">0</view>
-                                        </view>
-                                        <view class="text">
-                                            <view class="textTitle"> 剩余数量</view>
-                                            <view class="textNum">200</view>
-                                        </view>
-                                    </view>
-                                    
                             </view>
                             <view class="orderBtn">
                                     <navigator hover-class="none">下架</navigator>

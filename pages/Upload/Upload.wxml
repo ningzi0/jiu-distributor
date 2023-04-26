@@ -1,0 +1,110 @@
+<view class="upload-container">
+    <view class="img-upload">
+      <view class="flex-wrap">
+          <view class="iconfont icon-camera" bindtap='upload' wx:if="{{imgArr.length < 5}}"> + </view>
+          <view class="relative" wx:for="{{imgArr}}" wx:key="item">
+            <view class="iconfont icon-guanbi color-style" data-index='{{index}}' catchtap='deleteImg'>
+              <image src="/images/guanbi.png" mode=""/>
+            </view>
+            <image mode="aspectFill" src="{{item}}" bindtap="preview" data-src="{{item}}" alt="图片"/>
+        </view>
+      </view>
+      <text>商品主图上传(1张)</text>
+    </view>
+
+    <view class="img-upload">
+      <view class="flex-wrap">
+          <view class="iconfont icon-camera" bindtap='upload' wx:if="{{imgArr.length < 5}}"> + </view>
+          <view class="relative" wx:for="{{imgArr}}" wx:key="item">
+            <view class="iconfont icon-guanbi color-style" data-index='{{index}}' catchtap='deleteImg'>
+              <image src="/images/guanbi.png" mode=""/>
+            </view>
+            <image mode="aspectFill" src="{{item}}" bindtap="preview" data-src="{{item}}" alt="图片"/>
+        </view>
+      </view>
+      <text>商品轮播图上传(3-5张)</text>
+    </view>
+    
+
+    <view class="info-upload">
+        <label>
+            <text class="red">*</text>
+            <text class="label">商品标题</text>
+            <textarea  bindinput="getWords"  maxlength="{{maxTextLen}}" value=""/>
+            <view class="text-count-display f f-end">{{textLen}}/{{maxTextLen}}</view>
+        </label>
+        <label>
+            <text class="red">*</text>
+            <text class="label">成本价格</text>
+            <input type="number" />
+        </label>
+        <label>
+            <text class="red">*</text>
+            <text class="label">销售价格</text>
+            <input type="number" />
+        </label>
+        <view class="sku">
+            <view class="skuContent">
+              <view class="item">
+                  <text>SKU名称</text>
+                  <input type="text"/>
+              </view>
+              <view class="item">
+                  <text>SKU销售价(元)</text>
+                  <input type="text"/>
+              </view>
+              <view class="item">
+                  <text>SKU成本价(元)</text>
+                  <input type="text"/>
+              </view>
+              <view class="item">
+                  <text>SKU库存</text>
+                  <input type="text"/>
+              </view>
+            </view>
+            <view class="skuBtn">
+              <button>新增销售属性</button>
+              <button>删除销售属性</button>
+            </view>
+        </view>
+        <label>
+            <text class="red">*</text>
+            <text class="label">图文描述</text>
+            <textarea value="" class="des" placeholder="在这里输入关于商品详情的描述" placeholder-style="color:#cacaca"/>
+        </label>
+    </view>
+    <view class="img-upload">
+      <text>检验检疫报告上传</text>
+      <view class="flex-wrap">
+          <view class="iconfont icon-camera" bindtap='upload' wx:if="{{imgArr.length < 5}}"> + </view>
+          <view class="relative" wx:for="{{imgArr}}" wx:key="item">
+            <view class="iconfont icon-guanbi color-style" data-index='{{index}}' catchtap='deleteImg'>
+              <image src="/images/guanbi.png" mode=""/>
+            </view>
+            <image mode="aspectFill" src="{{item}}" bindtap="preview" data-src="{{item}}" alt="图片"/>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="img-upload">
+      <text>详情图上传</text>
+      <view class="flex-wrap">
+          <view class="iconfont icon-camera" bindtap='upload' wx:if="{{imgArr.length < 5}}"> + </view>
+          <view class="relative" wx:for="{{imgArr}}" wx:key="item">
+            <view class="iconfont icon-guanbi color-style" data-index='{{index}}' catchtap='deleteImg'>
+              <image src="/images/guanbi.png" mode=""/>
+            </view>
+            <image mode="aspectFill" src="{{item}}" bindtap="preview" data-src="{{item}}" alt="图片"/>
+        </view>
+      </view>
+    </view>
+</view>
+
+
+<view class="uploadBtn">
+  <button>发布</button>
+  <button>取消</button>
+</view>
+
+

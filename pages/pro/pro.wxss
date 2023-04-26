@@ -34,3 +34,7 @@
 .orderItemNorms .orderItemNormsText:last-child{
   text-align: left;
 }
+
+.orderItemNorms{
+  padding: 10rpx 0;
+}

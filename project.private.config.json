@@ -1,17 +1,5 @@
 {
   "condition": {
-    "plugin": {
-      "current": -1,
-      "list": []
-    },
-    "game": {
-      "current": -1,
-      "list": []
-    },
-    "gamePlugin": {
-      "current": -1,
-      "list": []
-    },
     "miniprogram": {
       "list": [
         {
@@ -207,8 +195,22 @@
           "name": "商品管理",
           "pathName": "pages/pro/pro",
           "query": "",
-          "scene": null,
-          "launchMode": "default"
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "商品上传",
+          "pathName": "pages/Upload/Upload",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "资料填写2",
+          "pathName": "pages/loginInput2/loginInput2",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
